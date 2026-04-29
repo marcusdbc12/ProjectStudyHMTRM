@@ -1,0 +1,8 @@
+sample_id: sample_0000
+refocus_stats: {'min': 0.0, 'max': 1764358600000.0, 'mean': 51878479843.693275, 'std': 174563916897.6586, 'nonzero_frac': 0.96875}
+trm_energy_stats: {'min': 0.0, 'max': 6.497469e+26, 'mean': 6.924098452810301e+24, 'std': 4.707766405952312e+25, 'nonzero_frac': 0.96875}
+refocus_below_surface_stats: {'min': 8378877.0, 'max': 1764358600000.0, 'mean': 53551979193.48984, 'std': 177104284876.6453, 'nonzero_frac': 1.0}
+trm_energy_below_surface_stats: {'min': 7294996600000000.0, 'max': 6.497469e+26, 'mean': 7.147456467417085e+24, 'std': 4.781426322943156e+25, 'nonzero_frac': 1.0}
+target_sum: 283.0
+trace_columns: ['src_00_rx_00', 'src_00_rx_01', 'src_00_rx_02', 'src_00_rx_03', 'src_00_rx_04', 'src_00_rx_05', 'src_00_rx_06', 'src_00_rx_07', 'src_00_rx_08', 'src_00_rx_09', 'src_00_rx_10', 'src_00_rx_11', 'src_00_rx_12', 'src_00_rx_13', 'src_00_rx_14', 'src_00_rx_15']
+trace_shape: [1012, 16]

@@ -1,0 +1,9 @@
+parameter,value,units,why_used,do_we_use_it,laser_side_status
+effective_acoustic_frequency,25000000.0,Hz,Controls the oscillation rate of the simulated source waveform.,yes,not a pure laser-only parameter in current code
+period,4e-08,s,One acoustic cycle duration = 1/frequency.,derived from frequency,derived quantity
+source_center_fraction,0.28,fraction of t_end,Places the pulse away from t=0 so the waveform has quiet time before emission.,"yes, implicit script constant",effective waveform timing parameter
+source_center_time,3.36e-08,s,Approximate center of the Gaussian-windowed pulse used by the source generator.,yes,effective waveform timing parameter
+window_rule_fraction,1.2e-08,s,One candidate width: 10% of the full simulation time window.,"yes, in max(...) rule",effective waveform width rule
+window_rule_cycles,1.2e-07,s,Second candidate width: approximately three periods of the source frequency.,"yes, in max(...) rule",effective waveform width rule
+window_width_used_in_source,1.2e-07,s,"Actual width passed to the Gaussian source window = max(0.10*t_end, 3/f).",yes,effective waveform width actually used
+gate_margin_time,1e-08,s,Extra safety delay added after estimated direct arrival before gating.,yes,"gate parameter, not laser physics"

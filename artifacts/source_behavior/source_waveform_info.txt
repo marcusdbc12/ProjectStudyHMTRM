@@ -1,0 +1,23 @@
+# Source waveform metadata
+mode: pure_gaussian
+t_end_s: 1.2e-07
+dt_s: 1.186e-10
+source_mag: 1.3e-05
+amplitude_over_dt: 109612.1416526138
+center_frac: 0.28
+center_s: 3.36e-08
+pulse_fwhm_ns: 5.0
+pulse_fwhm_s: 5e-09
+sigma_s: 2.1233045007200476e-09
+sigma_ns: 2.1233045007200477
+2sigma_ns: 4.2466090014400955
+4sigma_ns: 8.493218002880191
+6sigma_ns: 12.739827004320286
+n_samples: 1012
+
+Interpretation:
+- This script now plots a pure Gaussian pulse only.
+- The visible pulse can look wider than the FWHM because a Gaussian has no hard cutoff.
+- FWHM is measured at half of the peak amplitude, not at the full visible width.
+- For a 5 ns FWHM Gaussian, the visually noticeable width is often closer to ~8-10 ns.
+- This is expected behavior and does not mean the implementation is wrong.

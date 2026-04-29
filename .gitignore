@@ -1,0 +1,14 @@
+# Ignore large simulation data
+input/*
+output/*
+!input/.gitkeep
+!output/.gitkeep
+
+# Standard Python ignores
+__pycache__/
+*.py[cod]
+*.class
+.venv/
+venv/
+.env
+.DS_Store

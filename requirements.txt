@@ -1,0 +1,10 @@
+jwave
+jax
+jaxlib
+numpy
+pandas
+matplotlib
+scikit-learn
+tensorflow
+streamlit
+pillow

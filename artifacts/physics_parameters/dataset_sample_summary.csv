@@ -1,0 +1,17 @@
+source,field,value,meaning
+metadata.csv,rows,20,Number of generated samples
+metadata.csv,time_steps_first_sample,1012,Actual time samples in first sample
+metadata.csv,first_sample_source_x_px,64,First-sample value of source_x_px
+metadata.csv,first_sample_source_y_px,1,First-sample value of source_y_px
+metadata.csv,first_sample_grid_x,128,First-sample value of grid_x
+metadata.csv,first_sample_grid_y,96,First-sample value of grid_y
+metadata.csv,first_sample_frequency_hz,25000000.0,First-sample value of frequency_hz
+metadata.csv,first_sample_defect_type,void,First-sample value of defect_type
+dataset_manifest.json,samples,20,Manifest field samples
+dataset_manifest.json,grid_x,128,Manifest field grid_x
+dataset_manifest.json,grid_y,96,Manifest field grid_y
+dataset_manifest.json,dx_um,5.0,Manifest field dx_um
+dataset_manifest.json,frequency_hz,25000000.0,Manifest field frequency_hz
+dataset_manifest.json,source_position,center,Manifest field source_position
+dataset_manifest.json,source_x_px,64,Manifest field source_x_px
+dataset_manifest.json,source_y_px,1,Manifest field source_y_px

@@ -1,0 +1,6 @@
+class_argument,default_weight,normalized_probability
+--p-no-defect,0.2,0.2
+--p-crack,0.28,0.28
+--p-void,0.24,0.24
+--p-missing-pd,0.14,0.14
+--p-delamination,0.14,0.14

@@ -1,0 +1,23 @@
+parameter,value,units,meaning
+grid_x,128.0,pixels,Number of lateral grid points
+grid_y,96.0,pixels,Number of depth grid points
+dx,5.0,um,Spatial step used by the solver
+domain_width,640.0,um,Local modeled lateral size = grid_x * dx
+domain_depth,480.0,um,Local modeled depth size = grid_y * dx
+frequency,25000000.0,Hz,Effective acoustic center frequency used by the current source model
+si_speed,8433.0,m/s,Silicon reference wave speed
+pd_speed,3070.0,m/s,Palladium reference wave speed
+pd_thickness,50.0,nm,Physical Pd layer thickness
+si_thickness,300.0,um,Physical Si substrate thickness
+cfl,0.2,dimensionless,Courant number for stable time stepping
+dt_estimated,1.1858176212498517e-10,s,Estimated time step from CFL * dx / c_max
+dt_estimated_ns,0.11858176212498517,ns,Estimated time step in nanoseconds
+t_end,1.2e-07,s,Total simulation time window per sample
+t_end_ns,119.99999999999999,ns,Total simulation time window per sample in nanoseconds
+time_steps_estimated,1012.0,samples,Estimated number of time samples
+wavelength_si,337.32,um,Silicon wavelength = c_si / f
+wavelength_pd,122.8,um,Pd wavelength = c_pd / f
+ppw_si,67.464,points/wavelength,Silicon wavelength resolution
+ppw_pd,24.56,points/wavelength,Pd wavelength resolution
+sources,1.0,count,Configured sources argument
+sensors,16.0,count,Number of top-line receivers

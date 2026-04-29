@@ -1,0 +1,6 @@
+laser_side_quantity,available_in_code,current_proxy_or_closest_quantity,current_value,units,comments
+pulse_duration_tau_L,"no, not explicitly",window_width_used_in_source,1.2e-07,s,The code does not store a true optical pulse duration. It only uses an effective waveform width for the simulated source pulse.
+repetition_rate,no,none,,Hz,"The workflow simulates one excitation event per sample, not a repeated pulse train."
+optical_absorption_process,"no, not explicitly",none,,n/a,"The code does not include separate mu_a, fluence F, or Gruneisen parameter Gamma. It uses a direct effective acoustic source instead."
+effective_acoustic_source_frequency,yes,--frequency,25000000.0,Hz,"This is the main source-control parameter currently present in the code. It acts as an effective acoustic center frequency, not a full laser-side model."
+effective_pulse_center_time,yes,0.28 * t_end,3.36e-08,s,This controls where the simulated source pulse is centered inside the total time window.

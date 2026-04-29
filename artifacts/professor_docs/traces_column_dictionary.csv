@@ -1,0 +1,17 @@
+column_name,meaning,source_index,receiver_index,description
+src_00_rx_00,Trace recorded at receiver 0,0,0,Time-domain acoustic signal measured at receiver 0 for the only physical pulsed-laser source.
+src_00_rx_01,Trace recorded at receiver 1,0,1,Time-domain acoustic signal measured at receiver 1 for the only physical pulsed-laser source.
+src_00_rx_02,Trace recorded at receiver 2,0,2,Time-domain acoustic signal measured at receiver 2 for the only physical pulsed-laser source.
+src_00_rx_03,Trace recorded at receiver 3,0,3,Time-domain acoustic signal measured at receiver 3 for the only physical pulsed-laser source.
+src_00_rx_04,Trace recorded at receiver 4,0,4,Time-domain acoustic signal measured at receiver 4 for the only physical pulsed-laser source.
+src_00_rx_05,Trace recorded at receiver 5,0,5,Time-domain acoustic signal measured at receiver 5 for the only physical pulsed-laser source.
+src_00_rx_06,Trace recorded at receiver 6,0,6,Time-domain acoustic signal measured at receiver 6 for the only physical pulsed-laser source.
+src_00_rx_07,Trace recorded at receiver 7,0,7,Time-domain acoustic signal measured at receiver 7 for the only physical pulsed-laser source.
+src_00_rx_08,Trace recorded at receiver 8,0,8,Time-domain acoustic signal measured at receiver 8 for the only physical pulsed-laser source.
+src_00_rx_09,Trace recorded at receiver 9,0,9,Time-domain acoustic signal measured at receiver 9 for the only physical pulsed-laser source.
+src_00_rx_10,Trace recorded at receiver 10,0,10,Time-domain acoustic signal measured at receiver 10 for the only physical pulsed-laser source.
+src_00_rx_11,Trace recorded at receiver 11,0,11,Time-domain acoustic signal measured at receiver 11 for the only physical pulsed-laser source.
+src_00_rx_12,Trace recorded at receiver 12,0,12,Time-domain acoustic signal measured at receiver 12 for the only physical pulsed-laser source.
+src_00_rx_13,Trace recorded at receiver 13,0,13,Time-domain acoustic signal measured at receiver 13 for the only physical pulsed-laser source.
+src_00_rx_14,Trace recorded at receiver 14,0,14,Time-domain acoustic signal measured at receiver 14 for the only physical pulsed-laser source.
+src_00_rx_15,Trace recorded at receiver 15,0,15,Time-domain acoustic signal measured at receiver 15 for the only physical pulsed-laser source.
