@@ -1,70 +1,13 @@
-2026-04-24 19:24:36,865 | INFO | Starting synthetic data generation
-2026-04-24 19:24:36,865 | INFO | Arguments: {'project_root': PosixPath('/Users/mbarrionuevo/Downloads/jwave_keras_gui_workflow'), 'samples': 1, 'grid_x': 128, 'grid_y': 96, 'grid': None, 'dx_um': 5.0, 'dx': None, 'pd_thickness_nm': 0.0, 'si_thickness_um': 300.0, 'pd_speed': 3070.0, 'si_speed': 8433.0, 'sources': 1, 'sensors': 16, 't_end': 2.5e-07, 'cfl': 0.2, 'seed': 7, 'min_defect_frac': 0.1, 'max_defect_frac': 0.32, 'p_no_defect': 0.2, 'p_crack': 0.28, 'p_void': 0.24, 'p_missing_pd': 0.14, 'p_delamination': 0.14, 'source_position': 'center', 'source_x_px': None, 'source_y_px': 1, 'overwrite': True, 'method': 'fwi', 'fwi_epochs': 60, 'fwi_lr': 1000.0}
-2026-04-24 19:24:36,866 | INFO | Using top-surface source=(64,1) and 16 top-line sensors
-2026-04-24 19:24:37,202 | INFO | Generating sample_0000
-2026-04-24 19:24:37,203 | WARNING | All inputs are Arrays. This is not recommended for performance reasons. Consider using Fields instead.
-2026-04-24 19:24:37,262 | WARNING | All inputs are Arrays. This is not recommended for performance reasons. Consider using Fields instead.
-2026-04-24 19:24:40,649 | INFO | Starting Robust FWI for sample_0000 over 60 epochs...
-2026-04-24 19:24:41,108 | WARNING | All inputs are Arrays. This is not recommended for performance reasons. Consider using Fields instead.
-2026-04-24 19:24:44,410 | INFO |   FWI Epoch 01/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:24:47,151 | INFO |   FWI Epoch 02/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:24:49,922 | INFO |   FWI Epoch 03/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:24:52,577 | INFO |   FWI Epoch 04/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:24:55,242 | INFO |   FWI Epoch 05/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:24:57,852 | INFO |   FWI Epoch 06/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:25:00,499 | INFO |   FWI Epoch 07/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:25:03,255 | INFO |   FWI Epoch 08/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:25:05,933 | INFO |   FWI Epoch 09/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:25:08,521 | INFO |   FWI Epoch 10/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:25:11,128 | INFO |   FWI Epoch 11/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:25:13,743 | INFO |   FWI Epoch 12/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:25:16,327 | INFO |   FWI Epoch 13/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:25:18,915 | INFO |   FWI Epoch 14/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:25:21,521 | INFO |   FWI Epoch 15/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:25:24,123 | INFO |   FWI Epoch 16/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:25:26,727 | INFO |   FWI Epoch 17/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:25:29,372 | INFO |   FWI Epoch 18/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:25:31,986 | INFO |   FWI Epoch 19/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:25:34,592 | INFO |   FWI Epoch 20/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:25:37,221 | INFO |   FWI Epoch 21/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:25:39,818 | INFO |   FWI Epoch 22/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:25:42,422 | INFO |   FWI Epoch 23/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:25:45,047 | INFO |   FWI Epoch 24/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:25:47,649 | INFO |   FWI Epoch 25/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:25:50,260 | INFO |   FWI Epoch 26/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:25:52,958 | INFO |   FWI Epoch 27/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:25:55,562 | INFO |   FWI Epoch 28/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:25:58,201 | INFO |   FWI Epoch 29/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:26:00,829 | INFO |   FWI Epoch 30/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:26:03,420 | INFO |   FWI Epoch 31/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:26:06,026 | INFO |   FWI Epoch 32/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:26:08,620 | INFO |   FWI Epoch 33/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:26:11,246 | INFO |   FWI Epoch 34/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:26:13,836 | INFO |   FWI Epoch 35/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:26:16,431 | INFO |   FWI Epoch 36/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:26:18,972 | INFO |   FWI Epoch 37/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:26:21,496 | INFO |   FWI Epoch 38/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:26:24,016 | INFO |   FWI Epoch 39/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:26:26,594 | INFO |   FWI Epoch 40/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:26:29,137 | INFO |   FWI Epoch 41/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:26:31,717 | INFO |   FWI Epoch 42/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:26:34,319 | INFO |   FWI Epoch 43/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:26:36,905 | INFO |   FWI Epoch 44/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:26:39,451 | INFO |   FWI Epoch 45/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:26:41,980 | INFO |   FWI Epoch 46/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:26:44,541 | INFO |   FWI Epoch 47/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:26:47,065 | INFO |   FWI Epoch 48/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:26:49,596 | INFO |   FWI Epoch 49/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:26:52,123 | INFO |   FWI Epoch 50/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:26:54,647 | INFO |   FWI Epoch 51/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:26:57,177 | INFO |   FWI Epoch 52/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:26:59,699 | INFO |   FWI Epoch 53/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:27:02,223 | INFO |   FWI Epoch 54/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:27:04,754 | INFO |   FWI Epoch 55/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:27:07,292 | INFO |   FWI Epoch 56/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:27:09,792 | INFO |   FWI Epoch 57/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:27:12,442 | INFO |   FWI Epoch 58/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:27:15,078 | INFO |   FWI Epoch 59/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:27:17,777 | INFO |   FWI Epoch 60/60 | Loss: 1.369417e-05 | GradNorm: 3.463126e-09 | UpdateNorm: 0.000000e+00
-2026-04-24 19:27:18,654 | INFO | sample_0000 calculated surface velocity: 8261.00 m/s
-2026-04-24 19:27:19,055 | INFO | Finished generation of 1 samples
+2026-04-30 01:57:17,042 | INFO | Starting synthetic data generation
+2026-04-30 01:57:17,042 | INFO | Arguments: {'project_root': WindowsPath('C:/sources/ProjectStudyHMTRM'), 'samples': 1, 'grid_x': 64, 'grid_y': 48, 'grid': None, 'dx_um': 5.0, 'dx': None, 'pd_thickness_nm': 50.0, 'si_thickness_um': 300.0, 'pd_speed': 3070.0, 'si_speed': 8433.0, 'sources': 1, 'sensors': 8, 't_end': 1.2e-07, 'cfl': 0.2, 'seed': 7, 'min_defect_frac': 0.1, 'max_defect_frac': 0.32, 'p_no_defect': 0.2, 'p_crack': 0.28, 'p_void': 0.24, 'p_missing_pd': 0.14, 'p_delamination': 0.14, 'source_position': 'center', 'source_x_px': None, 'source_y_px': 1, 'overwrite': True, 'method': 'fwi', 'fwi_epochs': 3, 'fwi_lr': 50000.0}
+2026-04-30 01:57:17,044 | INFO | Using top-surface source=(32,1) and 8 top-line sensors
+2026-04-30 01:57:17,246 | INFO | Generating sample_0000
+2026-04-30 01:57:17,248 | WARNING | All inputs are Arrays. This is not recommended for performance reasons. Consider using Fields instead.
+2026-04-30 01:57:17,278 | WARNING | All inputs are Arrays. This is not recommended for performance reasons. Consider using Fields instead.
+2026-04-30 01:57:18,667 | INFO | Starting Robust FWI for sample_0000 over 3 epochs...
+2026-04-30 01:57:18,887 | WARNING | All inputs are Arrays. This is not recommended for performance reasons. Consider using Fields instead.
+2026-04-30 01:57:20,283 | INFO |   FWI Epoch 01/3 | Loss: 2.446628198364e-15 | GradNorm: 1.911371985368e-15 | SmoothGradNorm: 7.063816969946e-16 | UpdateNorm: 3.531910479069e-03
+2026-04-30 01:57:20,713 | INFO |   FWI Epoch 02/3 | Loss: 2.485089846917e-15 | GradNorm: 2.214890021336e-14 | SmoothGradNorm: 1.567145461252e-14 | UpdateNorm: 3.625665232539e-02
+2026-04-30 01:57:21,151 | INFO |   FWI Epoch 03/3 | Loss: 6.782361791738e-15 | GradNorm: 2.378660148624e-13 | SmoothGradNorm: 1.859366339282e-13 | UpdateNorm: 2.829527556896e-01
+2026-04-30 01:57:22,040 | INFO | sample_0000 calculated surface velocity: 8198.79 m/s
+2026-04-30 01:57:22,640 | INFO | Finished generation of 1 samples

@@ -46,7 +46,7 @@ streamlit run app/streamlit_app.py
 ### 1. Generate synthetic data
 
 ```bash
-python scripts/generate_synthetic_data.py --samples 24 --grid 96 --dx 5e-6 --sources 12 --sensors 12 --frequency 25e6
+python scripts\\generate_synthetic_data.py --samples 24 --grid 96 --dx 5e-6 --sources 12 --sensors 12 --frequency 25e6
 ```
 
 Useful options:
@@ -63,25 +63,25 @@ Useful options:
 ### 2. Split the dataset
 
 ```bash
-python scripts/split_dataset.py --train-ratio 0.7 --validation-ratio 0.15 --test-ratio 0.15 --copy-test-files
+python scripts\\split_dataset.py --train-ratio 0.7 --validation-ratio 0.15 --test-ratio 0.15 --copy-test-files
 ```
 
 ### 3. Train the supervised inverse model
 
 ```bash
-python scripts/train_supervised_keras.py --epochs 20 --batch-size 4 --learning-rate 1e-3
+python scripts\\train_supervised_keras.py --epochs 20 --batch-size 4 --learning-rate 1e-3
 ```
 
 ### 4. Train the PINN-style model
 
 ```bash
-python scripts/train_pinn_keras.py --epochs 20 --batch-size 4 --learning-rate 1e-3 --physics-weight 0.15
+python scripts\\train_pinn_keras.py --epochs 20 --batch-size 4 --learning-rate 1e-3 --physics-weight 0.15
 ```
 
 ### 5. Run a use case / validation inference
 
 ```bash
-python usecases/validate_and_infer.py --sample-id sample_0000 --model-path artifacts/best_supervised.keras
+python usecases\\validate_and_infer.py --sample-id sample_0000 --model-path artifacts/best_supervised.keras
 ```
 
 ## Notes about the PINN option

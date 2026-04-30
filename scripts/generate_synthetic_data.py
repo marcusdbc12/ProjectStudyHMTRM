@@ -697,7 +697,7 @@ def make_gaussian_kernel(sigma=1.5, size=5):
     kernel = jnp.exp(-(x**2 + y**2) / (2. * sigma**2))
     return kernel / jnp.sum(kernel)
 
-def plot_fwi_results(true_c, reconstructed_c, loss_history, dx_m, output_dir, sample_id, delta_c=None, grad_history=None, update_history=None):
+def plot_fwi_results(true_c, reconstructed_c, loss_history, dx_m, output_dir, sample_id):
     """Plots the True Speed, Reconstructed Speed, and Error Convergence."""
     fig, axes = plt.subplots(1, 3, figsize=(18, 5))
     
@@ -724,30 +724,6 @@ def plot_fwi_results(true_c, reconstructed_c, loss_history, dx_m, output_dir, sa
     plt.tight_layout()
     plt.savefig(output_dir / f'{sample_id}_fwi_results.png', dpi=160)
     plt.close()
-    if delta_c is not None:
-        plt.figure(figsize=(7, 5))
-        extent = [0, delta_c.shape[1] * dx_m * 1e6, delta_c.shape[0] * dx_m * 1e6, 0]
-        plt.imshow(delta_c, extent=extent, aspect='auto')
-        plt.colorbar(label='Δ velocity (m/s)')
-        plt.title(f'{sample_id} - FWI perturbation: reconstructed - background')
-        plt.xlabel('x (µm)')
-        plt.ylabel('y (µm)')
-        plt.tight_layout()
-        plt.savefig(output_dir / f'{sample_id}_fwi_delta_c.png', dpi=200)
-        plt.close()
-
-    if grad_history is not None and update_history is not None:
-        plt.figure(figsize=(8, 5))
-        plt.plot(grad_history, label='Gradient norm')
-        plt.plot(update_history, label='Update norm')
-        plt.xlabel('Epoch')
-        plt.ylabel('Norm')
-        plt.title(f'{sample_id} - FWI debug curves')
-        plt.legend()
-        plt.grid(True)
-        plt.tight_layout()
-        plt.savefig(output_dir / f'{sample_id}_fwi_debug_curves.png', dpi=200)
-        plt.close()
 
 # 
 def run_fwi_optimization(true_recordings, medium_guess, time_axis, src, sensors, epochs, lr, sample_id):
@@ -775,24 +751,17 @@ def run_fwi_optimization(true_recordings, medium_guess, time_axis, src, sensors,
     att_arr = extract_array(medium_guess.attenuation)
     true_recordings = jnp.asarray(true_recordings)
     true_recordings = jnp.squeeze(true_recordings)
+    n_sensors = len(sensors.positions[0])
 
     if true_recordings.ndim == 1:
         true_recordings = true_recordings[:, None]
     elif true_recordings.ndim == 2:
-        if true_recordings.shape[0] == sensors and true_recordings.shape[1] != sensors:
+        if true_recordings.shape[0] == n_sensors and true_recordings.shape[1] != n_sensors:
             true_recordings = true_recordings.T
     else:
         true_recordings = true_recordings.reshape(true_recordings.shape[0], -1)
 
     delta_c = jnp.zeros_like(c0)
-
-    ny, nx = c0.shape
-    y = jnp.arange(ny)[:, None]
-
-    # Do not update the first 80 pixels near the surface
-    update_mask = jnp.where((y >= 150) & (y <= 330), 1.0, 0.0)
-    delta_c = jnp.clip(delta_c, a_min=-4000.0, a_max=1000.0)
-    delta_c = delta_c * update_mask
 
     loss_history = []
     grad_history = []
@@ -827,7 +796,7 @@ def run_fwi_optimization(true_recordings, medium_guess, time_axis, src, sensors,
         if sim_recordings.ndim == 1:
             sim_recordings = sim_recordings[:, None]
         elif sim_recordings.ndim == 2:
-            if sim_recordings.shape[0] == sensors and sim_recordings.shape[1] != sensors:
+            if sim_recordings.shape[0] == n_sensors and sim_recordings.shape[1] != n_sensors:
                 sim_recordings = sim_recordings.T
         else:
             sim_recordings = sim_recordings.reshape(sim_recordings.shape[0], -1)
@@ -837,13 +806,12 @@ def run_fwi_optimization(true_recordings, medium_guess, time_axis, src, sensors,
         t = jnp.arange(error.shape[0]) * time_axis.dt
         t_ns = t * 1e9
 
-        weight = jnp.where((t_ns >= 115.0) & (t_ns <= 145.0), 1.0, 0.02)
+        weight = jnp.where((t_ns >= 105.0) & (t_ns <= 150.0), 1.0, 0.1)
         weight = weight[:, None]
 
         weighted_error = error * weight
-        positive_penalty = 1e-7 * jnp.mean(jnp.square(jnp.maximum(delta_c, 0.0)))
-        reg = 1e-8 * jnp.mean(jnp.square(delta_c)) + positive_penalty
 
+        reg = 1e-8 * jnp.mean(jnp.square(delta_c))
 
         return jnp.mean(jnp.square(weighted_error)) + reg
 
@@ -866,10 +834,17 @@ def run_fwi_optimization(true_recordings, medium_guess, time_axis, src, sensors,
         # 3. Reshape it exactly back to what JAX expects
         smoothed_grad = jnp.reshape(smoothed_2d, raw_grad.shape)
         
-        updates, opt_state = optimizer.update(smoothed_grad, opt_state)
+        # updates, opt_state = optimizer.update(smoothed_grad, opt_state)
+        # delta_c = optax.apply_updates(delta_c, updates)        
+        
+        # Invertimos el signo porque queremos minimizar el error
+        updates, opt_state = optimizer.update(smoothed_grad, opt_state, delta_c)
         delta_c = optax.apply_updates(delta_c, updates)
-        delta_c = jnp.clip(delta_c, a_min=-4000.0, a_max=1000.0)
-        delta_c = delta_c * update_mask
+
+        # Evita que delta_c se quede microscópico respecto a velocidades de miles m/s
+        delta_c = jnp.clip(delta_c, -3000.0, 3000.0)
+
+
         # Constrain the physics bounds (e.g., Silicon sound speed limits)
         #c_current = jnp.clip(c_current, a_min=10.0, a_max=9500.0)
 
@@ -878,12 +853,13 @@ def run_fwi_optimization(true_recordings, medium_guess, time_axis, src, sensors,
         update_history.append(float(jnp.linalg.norm(delta_c)))
 
         logging.info(
-            "  FWI Epoch %02d/%d | Loss: %.6e | GradNorm: %.6e | UpdateNorm: %.6e",
+            "  FWI Epoch %02d/%d | Loss: %.12e | GradNorm: %.12e | SmoothGradNorm: %.12e | UpdateNorm: %.12e",
             epoch + 1,
             epochs,
             float(loss_val),
-            grad_history[-1],
-            update_history[-1],
+            float(jnp.linalg.norm(raw_grad)),
+            float(jnp.linalg.norm(smoothed_grad)),
+            float(jnp.linalg.norm(delta_c)),
         )
 
     c_final = jnp.clip(c0 + delta_c, a_min=c_min, a_max=c_max)
@@ -1036,14 +1012,12 @@ def main() -> None:
             )
 
             trm_field = simulate_wave_propagation(
-
                 medium_base,
-
                 time_axis,
-
                 sources=src_trm
-
             )
+
+
 
             trm_field_np = normalize_field_array(trm_field)
 
@@ -1062,6 +1036,13 @@ def main() -> None:
             trm_energy_log = safe_log10(trm_energy)
             trm_max_row_norm = row_normalize(trm_max)
             trm_energy_row_norm = row_normalize(trm_energy)
+
+            logging.info('trm_field_np shape: %s', trm_field_np.shape)
+            logging.info('trm_max stats: min=%g max=%g mean=%g', np.min(trm_max), np.max(trm_max), np.mean(trm_max))
+            logging.info('trm_energy stats: min=%g max=%g mean=%g', np.min(trm_energy), np.max(trm_energy), np.mean(trm_energy))
+            logging.info('target sum: %g', np.sum(target))
+
+
 
             save_csv(trm_max, input_dir / f'{sample_id}_refocus.csv')
             save_csv(trm_energy, input_dir / f'{sample_id}_trm_energy.csv')
@@ -1089,9 +1070,8 @@ def main() -> None:
             # FWI PIPELINE (The new code)
             # ==========================================
             if defect_type != 'no_defect':
-                residual_traces_2d = np.squeeze(residual_traces, axis=1)
-                fwi_reconstructed_c, loss_curve, grad_curve, update_curve = run_fwi_optimization(
-                    true_recordings=jnp.asarray(residual_traces_2d), 
+                fwi_reconstructed_c, loss_curve, grad_history, update_history = run_fwi_optimization(
+                    true_recordings=jnp.asarray(rec_np), 
                     medium_guess=medium_base, 
                     time_axis=time_axis, 
                     src=src, 
@@ -1101,26 +1081,17 @@ def main() -> None:
                     sample_id=sample_id
                 )
                 
-
-                background_c = normalize_field_array(medium_base.sound_speed)
-                delta_plot = fwi_reconstructed_c - background_c
-
                 # Save the numerical array
                 np.savetxt(output_dir / f'{sample_id}_fwi_c_map.csv', fwi_reconstructed_c, delimiter=',')
-                np.savetxt(output_dir / f'{sample_id}_fwi_delta_c_map.csv', delta_plot, delimiter=',')
-
+                
                 # Generate the 3-panel FWI graph
-
                 plot_fwi_results(
-                    true_c=sound_speed,
-                    reconstructed_c=fwi_reconstructed_c,
-                    loss_history=loss_curve,
-                    dx_m=dx_m,
-                    output_dir=output_dir,
-                    sample_id=sample_id,
-                    delta_c=delta_plot,
-                    grad_history=grad_curve,
-                    update_history=update_curve
+                    true_c=sound_speed, 
+                    reconstructed_c=fwi_reconstructed_c, 
+                    loss_history=loss_curve, 
+                    dx_m=dx_m, 
+                    output_dir=output_dir, 
+                    sample_id=sample_id
                 )
             else:
                 logging.info(f"Sample {sample_id} is no_defect. Skipping FWI.")

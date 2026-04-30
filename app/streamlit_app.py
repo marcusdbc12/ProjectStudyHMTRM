@@ -53,7 +53,8 @@ with left:
             '--dx-um', str(dx_um),
             '--sources', str(sources),
             '--sensors', str(sensors),
-            '--frequency', str(frequency_hz),
+            # FIX: script no soporta frequency
+            # '--frequency', str(frequency_hz),
             '--pd-thickness-nm', str(pd_thickness_nm),
             '--si-thickness-um', str(si_thickness_um),
             '--pd-speed', str(pd_speed),
