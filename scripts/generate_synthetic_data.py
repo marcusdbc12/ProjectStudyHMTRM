@@ -959,6 +959,14 @@ def main() -> None:
         rec_np_base = normalize_recordings_array(recordings_base, args.sensors)
         baseline_traces_arr = rec_np_base[:, None, :]
 
+        baseline_field = simulate_wave_propagation(
+            medium_base,
+            time_axis,
+            sources=src,
+        )
+
+        baseline_field_np = normalize_field_array(baseline_field)
+
         # 2. SIMULACIÓN REAL (CON DEFECTO)
         recordings = simulate_wave_propagation(medium, time_axis, sources=src, sensors=sensors)
         rec_np = normalize_recordings_array(recordings, args.sensors)
@@ -968,21 +976,21 @@ def main() -> None:
         residual_traces = traces_arr - baseline_traces_arr
 
 
-        gated_traces = rec_np.copy()
-        dt = float(time_axis.dt)
-        margin_time = 10e-9
-        source_center_time = args.t_end * 0.28
+        # gated_traces = rec_np.copy()
+        # dt = float(time_axis.dt)
+        # margin_time = 10e-9
+        # source_center_time = args.t_end * 0.28
 
-        for r in range(args.sensors):
-            dx_r = abs(int(sensor_x[r]) - int(source_x[0])) * dx_m
-            dy_r = abs(int(sensor_y[r]) - int(source_y[0])) * dx_m
-            d_r = float(np.sqrt(dx_r * dx_r + dy_r * dy_r))
-            t_direct = d_r / float(args.si_speed)
-            gate_time = source_center_time + t_direct + margin_time
-            gate_idx_r = min(gated_traces.shape[0], max(0, int(np.floor(gate_time / dt))))
-            gated_traces[:gate_idx_r, r] = 0.0
+        # for r in range(args.sensors):
+        #     dx_r = abs(int(sensor_x[r]) - int(source_x[0])) * dx_m
+        #     dy_r = abs(int(sensor_y[r]) - int(source_y[0])) * dx_m
+        #     d_r = float(np.sqrt(dx_r * dx_r + dy_r * dy_r))
+        #     t_direct = d_r / float(args.si_speed)
+        #     gate_time = source_center_time + t_direct + margin_time
+        #     gate_idx_r = min(gated_traces.shape[0], max(0, int(np.floor(gate_time / dt))))
+        #     gated_traces[:gate_idx_r, r] = 0.0
 
-        reversed_traces = gated_traces[::-1, :]
+        # reversed_traces = gated_traces[::-1, :]
 
         save_csv(target, input_dir / f'{sample_id}_target.csv')
         save_csv(sound_speed, input_dir / f'{sample_id}_sound_speed.csv')
@@ -990,34 +998,47 @@ def main() -> None:
         save_csv(attenuation_map, input_dir / f'{sample_id}_attenuation.csv')
 
         if args.method == 'trm':
+            
 
-            residual_traces_2d = np.squeeze(residual_traces, axis=1)   # (time, sensors)
 
-            gated_traces = residual_traces_2d.copy()
+            logging.info("Running old_v8-compatible TRM block")
+
+            # old_v8 behavior: use the full recorded signal with defect, not residual
+            gated_traces = rec_np.copy()
+
+            dt = float(time_axis.dt)
+            margin_time = 10e-9
+            source_center_time = args.t_end * 0.28
+
+            for r in range(args.sensors):
+                dx_r = abs(int(sensor_x[r]) - int(source_x[0])) * dx_m
+                dy_r = abs(int(sensor_y[r]) - int(source_y[0])) * dx_m
+                d_r = float(np.sqrt(dx_r * dx_r + dy_r * dy_r))
+
+                t_direct = d_r / float(args.si_speed)
+                gate_time = source_center_time + t_direct + margin_time
+                gate_idx_r = min(
+                    gated_traces.shape[0],
+                    max(0, int(np.floor(gate_time / dt)))
+                )
+
+                gated_traces[:gate_idx_r, r] = 0.0
 
             reversed_traces = gated_traces[::-1, :]
-
-            signals_clean = jnp.asarray(reversed_traces.T)             # (sensors, time)
+            signals_clean = jnp.asarray(reversed_traces.T)
 
             src_trm = Sources(
-
                 positions=(jnp.asarray(sensor_y), jnp.asarray(sensor_x)),
-
                 signals=signals_clean,
-
                 dt=time_axis.dt,
-
-                domain=medium_base.domain
-
+                domain=medium.domain,
             )
 
             trm_field = simulate_wave_propagation(
-                medium_base,
+                medium,
                 time_axis,
-                sources=src_trm
+                sources=src_trm,
             )
-
-
 
             trm_field_np = normalize_field_array(trm_field)
 
@@ -1031,6 +1052,13 @@ def main() -> None:
             surface_mask_depth = int(sensor_y[0]) + 2
             trm_max[:surface_mask_depth, :] = 0.0
             trm_energy[:surface_mask_depth, :] = 0.0
+
+            logging.info("old_v8-compatible trm_field_np shape: %s", trm_field_np.shape)
+            logging.info("trm_max stats: min=%g max=%g mean=%g", np.min(trm_max), np.max(trm_max), np.mean(trm_max))
+            logging.info("trm_energy stats: min=%g max=%g mean=%g", np.min(trm_energy), np.max(trm_energy), np.mean(trm_energy))
+            logging.info("target sum: %g", np.sum(target))
+
+
 
             trm_max_log = safe_log10(trm_max)
             trm_energy_log = safe_log10(trm_energy)
