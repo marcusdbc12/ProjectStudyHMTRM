@@ -1,0 +1,26 @@
+{
+    "6 ideal bands": {
+        "folder": "/Users/mbarrionuevo/Downloads/jwave_keras_gui_workflow/jupytertest/fwi_20MHz_to_85MHz_6bands_LIMIT_BENCHMARK_results",
+        "experiment_type": "resolution_limit",
+        "num_bands": 6,
+        "geometry": "ideal_horizontal"
+    },
+    "8 ideal bands": {
+        "folder": "/Users/mbarrionuevo/Downloads/jwave_keras_gui_workflow/jupytertest/fwi_20MHz_to_85MHz_8bands_LIMIT_BENCHMARK_results",
+        "experiment_type": "resolution_limit",
+        "num_bands": 8,
+        "geometry": "ideal_horizontal"
+    },
+    "10 ideal bands": {
+        "folder": "/Users/mbarrionuevo/Downloads/jwave_keras_gui_workflow/jupytertest/fwi_20MHz_to_85MHz_10bands_LIMIT_BENCHMARK_results",
+        "experiment_type": "resolution_limit",
+        "num_bands": 10,
+        "geometry": "ideal_horizontal"
+    },
+    "3 irregular tectonic bands": {
+        "folder": "/Users/mbarrionuevo/Downloads/jwave_keras_gui_workflow/jupytertest/fwi_20MHz_to_85MHz_3bands_realistic_tectonic_results",
+        "experiment_type": "realistic_tectonic",
+        "num_bands": 3,
+        "geometry": "irregular_tectonic"
+    }
+}

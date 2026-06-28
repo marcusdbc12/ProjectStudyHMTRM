@@ -1,0 +1,6 @@
+Metric name,Formula,Unit,Meaning,Good result
+Void velocity update recovery percent,100 * reconstructed_mean_void_update / true_void_update,%,How much of the true slow-void velocity update was recovered.,Close to 100% is ideal.
+Void detection efficiency,void_expected_negative_energy / (void_expected_negative_energy + background_expected_negative_energy),0 to 1,How concentrated the slow-update signal is inside the true circular void.,Closer to 1 is better.
+False positive ratio,background_expected_negative_energy / void_expected_negative_energy,unitless,Slow-defect artifact strength outside the void relative to inside the void.,Closer to 0 is better.
+Wrong-sign ratio inside void,positive_update_energy_inside_void / negative_update_energy_inside_void,unitless,Whether the inversion creates fast artifacts inside a true slow void.,Closer to 0 is better.
+Background MAE,mean(abs(reconstructed_background_speed - true_background_speed)),m/s,Velocity error outside the void but inside the silicon inversion mask.,Lower is better.

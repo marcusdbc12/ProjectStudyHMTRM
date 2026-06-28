@@ -1,0 +1,453 @@
+section,experiment_name,experiment_type,num_bands,geometry,metric,stage1_value,stage2_value,improvement_amount,interpretation,tectonic_band_number,band_type,stage,value,computed_from_map_long
+global_stage1_vs_stage2,10 ideal bands,resolution_limit,10,ideal_horizontal,Bias,-18.19690704345703,-0.5890865921974182,17.607820451259613,improved,,,,,
+global_stage1_vs_stage2,10 ideal bands,resolution_limit,10,ideal_horizontal,Correlation,0.3645472966897692,0.7630626300192181,0.39851533332944894,improved,,,,,
+global_stage1_vs_stage2,10 ideal bands,resolution_limit,10,ideal_horizontal,MAE,151.92471313476562,127.63671875,24.287994384765625,improved,,,,,
+global_stage1_vs_stage2,10 ideal bands,resolution_limit,10,ideal_horizontal,NRMSE,20.54900360107422,14.199347496032717,6.349656105041502,improved,,,,,
+global_stage1_vs_stage2,10 ideal bands,resolution_limit,10,ideal_horizontal,RMSE,207.94778442382812,143.6917724609375,64.25601196289062,improved,,,,,
+global_stage1_vs_stage2,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,Bias,-3.2395498752593994,0.5531705617904663,3.7927204370498657,improved,,,,,
+global_stage1_vs_stage2,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,Correlation,0.723128258090064,0.8947062023123203,0.17157794422225636,improved,,,,,
+global_stage1_vs_stage2,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,MAE,147.47010803222656,87.98314666748047,59.486961364746094,improved,,,,,
+global_stage1_vs_stage2,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,NRMSE,19.01871681213379,12.42104434967041,6.597672462463379,improved,,,,,
+global_stage1_vs_stage2,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,RMSE,176.4232940673828,115.22132110595705,61.20197296142577,improved,,,,,
+global_stage1_vs_stage2,6 ideal bands,resolution_limit,6,ideal_horizontal,Bias,0.461974024772644,-3.2308528423309326,-3.6928268671035767,not improved,,,,,
+global_stage1_vs_stage2,6 ideal bands,resolution_limit,6,ideal_horizontal,Correlation,0.7599664984637354,0.800887941314884,0.040921442851148626,improved,,,,,
+global_stage1_vs_stage2,6 ideal bands,resolution_limit,6,ideal_horizontal,MAE,88.1549072265625,77.77481842041016,10.380088806152344,improved,,,,,
+global_stage1_vs_stage2,6 ideal bands,resolution_limit,6,ideal_horizontal,NRMSE,15.0533447265625,13.81674861907959,1.2365961074829102,improved,,,,,
+global_stage1_vs_stage2,6 ideal bands,resolution_limit,6,ideal_horizontal,RMSE,101.555908203125,93.2133331298828,8.342575073242202,improved,,,,,
+global_stage1_vs_stage2,8 ideal bands,resolution_limit,8,ideal_horizontal,Bias,-0.6587035655975342,-4.347771167755127,-3.6890676021575928,not improved,,,,,
+global_stage1_vs_stage2,8 ideal bands,resolution_limit,8,ideal_horizontal,Correlation,0.7222489184554806,0.7795580701585131,0.057309151703032524,improved,,,,,
+global_stage1_vs_stage2,8 ideal bands,resolution_limit,8,ideal_horizontal,MAE,101.3985366821289,93.27281951904295,8.125717163085952,improved,,,,,
+global_stage1_vs_stage2,8 ideal bands,resolution_limit,8,ideal_horizontal,NRMSE,14.09797477722168,12.803213119506836,1.2947616577148438,improved,,,,,
+global_stage1_vs_stage2,8 ideal bands,resolution_limit,8,ideal_horizontal,RMSE,118.88825988769533,107.9695281982422,10.918731689453125,improved,,,,,
+resolution_limit_stage2,6 ideal bands,resolution_limit,6,ideal_horizontal,MAE,,77.77481842041016,,Stage 2 metric for resolution-limit comparison,,,,,
+resolution_limit_stage2,6 ideal bands,resolution_limit,6,ideal_horizontal,RMSE,,93.2133331298828,,Stage 2 metric for resolution-limit comparison,,,,,
+resolution_limit_stage2,6 ideal bands,resolution_limit,6,ideal_horizontal,NRMSE,,13.81674861907959,,Stage 2 metric for resolution-limit comparison,,,,,
+resolution_limit_stage2,6 ideal bands,resolution_limit,6,ideal_horizontal,Correlation,,0.800887941314884,,Stage 2 metric for resolution-limit comparison,,,,,
+resolution_limit_stage2,8 ideal bands,resolution_limit,8,ideal_horizontal,MAE,,93.27281951904295,,Stage 2 metric for resolution-limit comparison,,,,,
+resolution_limit_stage2,8 ideal bands,resolution_limit,8,ideal_horizontal,RMSE,,107.9695281982422,,Stage 2 metric for resolution-limit comparison,,,,,
+resolution_limit_stage2,8 ideal bands,resolution_limit,8,ideal_horizontal,NRMSE,,12.803213119506836,,Stage 2 metric for resolution-limit comparison,,,,,
+resolution_limit_stage2,8 ideal bands,resolution_limit,8,ideal_horizontal,Correlation,,0.7795580701585131,,Stage 2 metric for resolution-limit comparison,,,,,
+resolution_limit_stage2,10 ideal bands,resolution_limit,10,ideal_horizontal,MAE,,127.63671875,,Stage 2 metric for resolution-limit comparison,,,,,
+resolution_limit_stage2,10 ideal bands,resolution_limit,10,ideal_horizontal,RMSE,,143.6917724609375,,Stage 2 metric for resolution-limit comparison,,,,,
+resolution_limit_stage2,10 ideal bands,resolution_limit,10,ideal_horizontal,NRMSE,,14.199347496032717,,Stage 2 metric for resolution-limit comparison,,,,,
+resolution_limit_stage2,10 ideal bands,resolution_limit,10,ideal_horizontal,Correlation,,0.7630626300192181,,Stage 2 metric for resolution-limit comparison,,,,,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,1.0,fast band,Stage 1,63.85022,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,1.0,fast band,Stage 1,60.97037,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,1.0,fast band,Stage 1,63.981133,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,1.0,fast band,Stage 1,0.6579438,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,false_positive_ratio,,,,band-level metric,1.0,fast band,Stage 1,0.5198866,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,1.0,fast band,Stage 1,0.0,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,1.0,fast band,Stage 2,86.070694,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,1.0,fast band,Stage 2,28.063736,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,1.0,fast band,Stage 2,32.83704,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,1.0,fast band,Stage 2,0.74379385,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,false_positive_ratio,,,,band-level metric,1.0,fast band,Stage 2,0.34445864,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,1.0,fast band,Stage 2,0.0,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,2.0,slow band,Stage 1,83.33011,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,2.0,slow band,Stage 1,29.851477,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,2.0,slow band,Stage 1,37.91581,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,2.0,slow band,Stage 1,0.72434735,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,false_positive_ratio,,,,band-level metric,2.0,slow band,Stage 1,0.38055313,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,2.0,slow band,Stage 1,0.0,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,2.0,slow band,Stage 2,67.58626,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,2.0,slow band,Stage 2,55.384033,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,2.0,slow band,Stage 2,60.70991,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,2.0,slow band,Stage 2,0.67317915,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,false_positive_ratio,,,,band-level metric,2.0,slow band,Stage 2,0.48548862,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,2.0,slow band,Stage 2,0.0,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,3.0,fast band,Stage 1,66.84443,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,3.0,fast band,Stage 1,83.880516,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,3.0,fast band,Stage 1,86.40704,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,3.0,fast band,Stage 1,0.7640414,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,false_positive_ratio,,,,band-level metric,3.0,fast band,Stage 1,0.30882952,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,3.0,fast band,Stage 1,0.0,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,3.0,fast band,Stage 2,65.08759,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,3.0,fast band,Stage 2,88.62445,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,3.0,fast band,Stage 2,92.316734,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,3.0,fast band,Stage 2,0.7713543,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,false_positive_ratio,,,,band-level metric,3.0,fast band,Stage 2,0.29642105,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,3.0,fast band,Stage 2,0.0,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,4.0,slow band,Stage 1,69.728546,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,4.0,slow band,Stage 1,76.583984,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,4.0,slow band,Stage 1,80.469986,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,4.0,slow band,Stage 1,0.77474695,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,false_positive_ratio,,,,band-level metric,4.0,slow band,Stage 1,0.290744,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,4.0,slow band,Stage 1,0.0,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,4.0,slow band,Stage 2,73.90225,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,4.0,slow band,Stage 2,66.75826,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,4.0,slow band,Stage 2,70.067535,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,4.0,slow band,Stage 2,0.78610086,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,false_positive_ratio,,,,band-level metric,4.0,slow band,Stage 2,0.27210134,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,4.0,slow band,Stage 2,0.0,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,5.0,fast band,Stage 1,65.801445,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,5.0,fast band,Stage 1,115.35887,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,5.0,fast band,Stage 1,116.66331,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,5.0,fast band,Stage 1,0.81919193,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,false_positive_ratio,,,,band-level metric,5.0,fast band,Stage 1,0.2207152,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,5.0,fast band,Stage 1,0.0,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,5.0,fast band,Stage 2,62.901943,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,5.0,fast band,Stage 2,125.16718,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,5.0,fast band,Stage 2,127.90452,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,5.0,fast band,Stage 2,0.82214534,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,false_positive_ratio,,,,band-level metric,5.0,fast band,Stage 2,0.21632996,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,5.0,fast band,Stage 2,0.0,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,6.0,slow band,Stage 1,58.771812,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,6.0,slow band,Stage 1,139.07074,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,6.0,slow band,Stage 1,139.46709,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,6.0,slow band,Stage 1,0.7987446,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,false_positive_ratio,,,,band-level metric,6.0,slow band,Stage 1,0.25196457,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,6.0,slow band,Stage 1,0.0,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,6.0,slow band,Stage 2,75.71305,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,6.0,slow band,Stage 2,82.66583,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,6.0,slow band,Stage 2,85.28459,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,6.0,slow band,Stage 2,0.845458,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,false_positive_ratio,,,,band-level metric,6.0,slow band,Stage 2,0.18279086,
+band_recovery,6 ideal bands,resolution_limit,6,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,6.0,slow band,Stage 2,0.0,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,1.0,fast band,Stage 1,65.10591,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,1.0,fast band,Stage 1,58.852516,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,1.0,fast band,Stage 1,63.34151,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,1.0,fast band,Stage 1,0.6845619,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,false_positive_ratio,,,,band-level metric,1.0,fast band,Stage 1,0.4607883,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,1.0,fast band,Stage 1,0.0,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,1.0,fast band,Stage 2,55.649315,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,1.0,fast band,Stage 2,74.802025,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,1.0,fast band,Stage 2,77.00123,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,1.0,fast band,Stage 2,0.62731516,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,false_positive_ratio,,,,band-level metric,1.0,fast band,Stage 2,0.5940951,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,1.0,fast band,Stage 2,0.0,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,2.0,slow band,Stage 1,53.315945,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,2.0,slow band,Stage 1,78.73748,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,2.0,slow band,Stage 1,79.70376,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,2.0,slow band,Stage 1,0.6332531,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,false_positive_ratio,,,,band-level metric,2.0,slow band,Stage 1,0.57914746,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,2.0,slow band,Stage 1,0.0,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,2.0,slow band,Stage 2,73.522194,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,2.0,slow band,Stage 2,45.233448,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,2.0,slow band,Stage 2,46.65805,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,2.0,slow band,Stage 2,0.6773169,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,false_positive_ratio,,,,band-level metric,2.0,slow band,Stage 2,0.4764138,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,2.0,slow band,Stage 2,0.0,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,3.0,fast band,Stage 1,57.646973,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,3.0,fast band,Stage 1,107.14916,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,3.0,fast band,Stage 1,110.25469,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,3.0,fast band,Stage 1,0.74791133,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,false_positive_ratio,,,,band-level metric,3.0,fast band,Stage 1,0.33705685,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,3.0,fast band,Stage 1,0.0,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,3.0,fast band,Stage 2,58.087402,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,3.0,fast band,Stage 2,106.03491,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,3.0,fast band,Stage 2,107.37047,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,3.0,fast band,Stage 2,0.7326078,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,false_positive_ratio,,,,band-level metric,3.0,fast band,Stage 2,0.36498687,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,3.0,fast band,Stage 2,0.0,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,4.0,slow band,Stage 1,59.475464,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,4.0,slow band,Stage 1,102.52326,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,4.0,slow band,Stage 1,104.45266,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,4.0,slow band,Stage 1,0.75186986,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,false_positive_ratio,,,,band-level metric,4.0,slow band,Stage 1,0.3300174,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,4.0,slow band,Stage 1,0.0,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,4.0,slow band,Stage 2,71.341446,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,4.0,slow band,Stage 2,74.134186,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,4.0,slow band,Stage 2,76.464424,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,4.0,slow band,Stage 2,0.76057214,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,false_positive_ratio,,,,band-level metric,4.0,slow band,Stage 2,0.3147996,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,4.0,slow band,Stage 2,0.0,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,5.0,fast band,Stage 1,48.592617,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,5.0,fast band,Stage 1,173.4077,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,5.0,fast band,Stage 1,175.4553,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,5.0,fast band,Stage 1,0.7719111,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,false_positive_ratio,,,,band-level metric,5.0,fast band,Stage 1,0.29548597,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,5.0,fast band,Stage 1,0.0,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,5.0,fast band,Stage 2,58.38975,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,5.0,fast band,Stage 2,140.35997,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,5.0,fast band,Stage 2,141.29196,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,5.0,fast band,Stage 2,0.79228795,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,false_positive_ratio,,,,band-level metric,5.0,fast band,Stage 2,0.26216733,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,5.0,fast band,Stage 2,0.0,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,6.0,slow band,Stage 1,56.46335,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,6.0,slow band,Stage 1,146.85765,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,6.0,slow band,Stage 1,148.32893,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,6.0,slow band,Stage 1,0.7985197,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,false_positive_ratio,,,,band-level metric,6.0,slow band,Stage 1,0.25231734,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,6.0,slow band,Stage 1,0.0,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,6.0,slow band,Stage 2,70.49096,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,6.0,slow band,Stage 2,100.27122,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,6.0,slow band,Stage 2,103.54384,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,6.0,slow band,Stage 2,0.8134643,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,false_positive_ratio,,,,band-level metric,6.0,slow band,Stage 2,0.22931027,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,6.0,slow band,Stage 2,0.0,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,7.0,fast band,Stage 1,48.310482,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,7.0,fast band,Stage 1,217.94923,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,7.0,fast band,Stage 1,220.88675,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,7.0,fast band,Stage 1,0.8130371,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,false_positive_ratio,,,,band-level metric,7.0,fast band,Stage 1,0.22995615,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,7.0,fast band,Stage 1,0.0,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,7.0,fast band,Stage 2,63.11391,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,7.0,fast band,Stage 2,155.90428,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,7.0,fast band,Stage 2,156.8289,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,7.0,fast band,Stage 2,0.8448517,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,false_positive_ratio,,,,band-level metric,7.0,fast band,Stage 2,0.1836398,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,7.0,fast band,Stage 2,0.0,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,8.0,slow band,Stage 1,45.4518,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,8.0,slow band,Stage 1,230.00238,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,8.0,slow band,Stage 1,230.69057,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,8.0,slow band,Stage 1,0.79967415,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,false_positive_ratio,,,,band-level metric,8.0,slow band,Stage 1,0.25050932,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,8.0,slow band,Stage 1,0.0,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,8.0,slow band,Stage 2,63.550777,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,8.0,slow band,Stage 2,153.68805,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,8.0,slow band,Stage 2,155.76149,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,8.0,slow band,Stage 2,0.83404464,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,false_positive_ratio,,,,band-level metric,8.0,slow band,Stage 2,0.19897662,
+band_recovery,8 ideal bands,resolution_limit,8,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,8.0,slow band,Stage 2,0.0,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,1.0,fast band,Stage 1,-18.234978,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,1.0,fast band,Stage 1,199.41528,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,1.0,fast band,Stage 1,199.86256,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,1.0,fast band,Stage 1,0.0,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,false_positive_ratio,,,,band-level metric,1.0,fast band,Stage 1,,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,1.0,fast band,Stage 1,,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,1.0,fast band,Stage 2,56.21866,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,1.0,fast band,Stage 2,73.84177,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,1.0,fast band,Stage 2,81.69858,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,1.0,fast band,Stage 2,0.5492455,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,false_positive_ratio,,,,band-level metric,1.0,fast band,Stage 2,0.8206795454025269,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,1.0,fast band,Stage 2,0.0,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,2.0,slow band,Stage 1,-17.765718,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,2.0,slow band,Stage 1,198.62383,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,2.0,slow band,Stage 1,198.92552,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,2.0,slow band,Stage 1,0.0026539436,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,false_positive_ratio,,,,band-level metric,2.0,slow band,Stage 1,375.7977600097656,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,2.0,slow band,Stage 1,320.30999755859375,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,2.0,slow band,Stage 2,78.7949,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,2.0,slow band,Stage 2,43.170742,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,2.0,slow band,Stage 2,53.261322,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,2.0,slow band,Stage 2,0.6334374,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,false_positive_ratio,,,,band-level metric,2.0,slow band,Stage 2,0.5786879658699036,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,2.0,slow band,Stage 2,0.0,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,3.0,fast band,Stage 1,-0.07939928,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,3.0,fast band,Stage 1,253.1911,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,3.0,fast band,Stage 1,253.68112,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,3.0,fast band,Stage 1,0.31013095,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,false_positive_ratio,,,,band-level metric,3.0,fast band,Stage 1,2.2244443893432617,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,3.0,fast band,Stage 1,1.0278315544128418,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,3.0,fast band,Stage 2,63.491196,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,3.0,fast band,Stage 2,92.36385,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,3.0,fast band,Stage 2,95.338646,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,3.0,fast band,Stage 2,0.68116987,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,false_positive_ratio,,,,band-level metric,3.0,fast band,Stage 2,0.468062549829483,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,3.0,fast band,Stage 2,0.0,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,4.0,slow band,Stage 1,6.3716664,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,4.0,slow band,Stage 1,236.87056,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,4.0,slow band,Stage 1,237.61671,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,4.0,slow band,Stage 1,0.33918735,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,false_positive_ratio,,,,band-level metric,4.0,slow band,Stage 1,1.948223114013672,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,4.0,slow band,Stage 1,0.0912619084119796,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,4.0,slow band,Stage 2,56.41489,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,4.0,slow band,Stage 2,110.266205,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,4.0,slow band,Stage 2,114.75114,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,4.0,slow band,Stage 2,0.65100664,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,false_positive_ratio,,,,band-level metric,4.0,slow band,Stage 2,0.5360826253890991,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,4.0,slow band,Stage 2,0.0,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,5.0,fast band,Stage 1,8.439522,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,5.0,fast band,Stage 1,308.8521,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,5.0,fast band,Stage 1,309.40585,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,5.0,fast band,Stage 1,0.6573764,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,false_positive_ratio,,,,band-level metric,5.0,fast band,Stage 1,0.5211985111236572,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,5.0,fast band,Stage 1,0.0224627796560525,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,5.0,fast band,Stage 2,63.58365,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,5.0,fast band,Stage 2,122.839935,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,5.0,fast band,Stage 2,123.5526,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,5.0,fast band,Stage 2,0.7459943,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,false_positive_ratio,,,,band-level metric,5.0,fast band,Stage 2,0.3404928147792816,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,5.0,fast band,Stage 2,0.0,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,6.0,slow band,Stage 1,13.242198,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,6.0,slow band,Stage 1,292.65125,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,6.0,slow band,Stage 1,292.9542,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,6.0,slow band,Stage 1,0.571575,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,false_positive_ratio,,,,band-level metric,6.0,slow band,Stage 1,0.7495517730712891,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,6.0,slow band,Stage 1,0.0,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,6.0,slow band,Stage 2,60.294464,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,6.0,slow band,Stage 2,133.93452,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,6.0,slow band,Stage 2,135.61461,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,6.0,slow band,Stage 2,0.73299736,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,false_positive_ratio,,,,band-level metric,6.0,slow band,Stage 2,0.3642614185810089,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,6.0,slow band,Stage 2,0.0,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,7.0,fast band,Stage 1,10.65641,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,7.0,fast band,Stage 1,376.7176,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,7.0,fast band,Stage 1,377.1741,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,7.0,fast band,Stage 1,0.7591716,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,false_positive_ratio,,,,band-level metric,7.0,fast band,Stage 1,0.3172251880168915,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,7.0,fast band,Stage 1,0.0178857706487178,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,7.0,fast band,Stage 2,60.752167,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,7.0,fast band,Stage 2,165.4889,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,7.0,fast band,Stage 2,165.81616,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,7.0,fast band,Stage 2,0.7821169,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,false_positive_ratio,,,,band-level metric,7.0,fast band,Stage 2,0.2785812318325043,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,7.0,fast band,Stage 2,0.0,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,8.0,slow band,Stage 1,16.190765,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,8.0,slow band,Stage 1,353.38153,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,8.0,slow band,Stage 1,353.7355,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,8.0,slow band,Stage 1,0.67722666,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,false_positive_ratio,,,,band-level metric,8.0,slow band,Stage 1,0.4766105413436889,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,8.0,slow band,Stage 1,0.0,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,8.0,slow band,Stage 2,60.34855,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,8.0,slow band,Stage 2,167.19026,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,8.0,slow band,Stage 2,168.05035,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,8.0,slow band,Stage 2,0.77935076,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,false_positive_ratio,,,,band-level metric,8.0,slow band,Stage 2,0.2831193208694458,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,8.0,slow band,Stage 2,0.0,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,9.0,fast band,Stage 1,11.561082,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,9.0,fast band,Stage 1,447.4837,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,9.0,fast band,Stage 1,447.78384,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,9.0,fast band,Stage 1,0.80730754,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,false_positive_ratio,,,,band-level metric,9.0,fast band,Stage 1,0.2386852800846099,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,9.0,fast band,Stage 1,0.0025234667118638,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,9.0,fast band,Stage 2,60.57111,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,9.0,fast band,Stage 2,199.50275,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,9.0,fast band,Stage 2,199.96309,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,9.0,fast band,Stage 2,0.8154759,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,false_positive_ratio,,,,band-level metric,9.0,fast band,Stage 2,0.2262779027223587,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,9.0,fast band,Stage 2,0.0,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,10.0,slow band,Stage 1,16.842422,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,10.0,slow band,Stage 1,420.7607,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,10.0,slow band,Stage 1,421.4153,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,10.0,slow band,Stage 1,0.72788054,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,false_positive_ratio,,,,band-level metric,10.0,slow band,Stage 1,0.3738517761230469,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,10.0,slow band,Stage 1,0.0,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,velocity_update_recovery_percent,,,,band-level metric,10.0,slow band,Stage 2,61.8327,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,MAE_inside_band_m_per_s,,,,band-level metric,10.0,slow band,Stage 2,193.1189,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,RMSE_inside_band_m_per_s,,,,band-level metric,10.0,slow band,Stage 2,193.58961,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,detection_efficiency_0_to_1,,,,band-level metric,10.0,slow band,Stage 2,0.8177932,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,false_positive_ratio,,,,band-level metric,10.0,slow band,Stage 2,0.2228030115365982,
+band_recovery,10 ideal bands,resolution_limit,10,ideal_horizontal,wrong_sign_ratio_inside_band,,,,band-level metric,10.0,slow band,Stage 2,0.0,
+band_recovery,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,velocity_update_recovery_percent,,,,band-level metric,1.0,fast band,Stage 1,63.917698,
+band_recovery,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,MAE_inside_band_m_per_s,,,,band-level metric,1.0,fast band,Stage 1,152.14143,
+band_recovery,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,RMSE_inside_band_m_per_s,,,,band-level metric,1.0,fast band,Stage 1,156.87761,
+band_recovery,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,detection_efficiency_0_to_1,,,,band-level metric,1.0,fast band,Stage 1,0.7016456,
+band_recovery,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,false_positive_ratio,,,,band-level metric,1.0,fast band,Stage 1,0.42522097,
+band_recovery,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,wrong_sign_ratio_inside_band,,,,band-level metric,1.0,fast band,Stage 1,0.0,
+band_recovery,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,velocity_update_recovery_percent,,,,band-level metric,1.0,fast band,Stage 2,92.424736,
+band_recovery,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,MAE_inside_band_m_per_s,,,,band-level metric,1.0,fast band,Stage 2,47.178688,
+band_recovery,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,RMSE_inside_band_m_per_s,,,,band-level metric,1.0,fast band,Stage 2,70.87901,
+band_recovery,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,detection_efficiency_0_to_1,,,,band-level metric,1.0,fast band,Stage 2,0.7882648,
+band_recovery,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,false_positive_ratio,,,,band-level metric,1.0,fast band,Stage 2,0.2686092,
+band_recovery,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,wrong_sign_ratio_inside_band,,,,band-level metric,1.0,fast band,Stage 2,0.0,
+band_recovery,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,velocity_update_recovery_percent,,,,band-level metric,2.0,slow band,Stage 1,45.06739,
+band_recovery,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,MAE_inside_band_m_per_s,,,,band-level metric,2.0,slow band,Stage 1,138.97423,
+band_recovery,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,RMSE_inside_band_m_per_s,,,,band-level metric,2.0,slow band,Stage 1,155.85976,
+band_recovery,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,detection_efficiency_0_to_1,,,,band-level metric,2.0,slow band,Stage 1,0.8018427,
+band_recovery,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,false_positive_ratio,,,,band-level metric,2.0,slow band,Stage 1,0.24712737,
+band_recovery,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,wrong_sign_ratio_inside_band,,,,band-level metric,2.0,slow band,Stage 1,0.008192738,
+band_recovery,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,velocity_update_recovery_percent,,,,band-level metric,2.0,slow band,Stage 2,78.34493,
+band_recovery,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,MAE_inside_band_m_per_s,,,,band-level metric,2.0,slow band,Stage 2,70.626045,
+band_recovery,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,RMSE_inside_band_m_per_s,,,,band-level metric,2.0,slow band,Stage 2,91.66674,
+band_recovery,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,detection_efficiency_0_to_1,,,,band-level metric,2.0,slow band,Stage 2,0.9099081,
+band_recovery,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,false_positive_ratio,,,,band-level metric,2.0,slow band,Stage 2,0.099012114,
+band_recovery,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,wrong_sign_ratio_inside_band,,,,band-level metric,2.0,slow band,Stage 2,0.0014102594,
+band_recovery,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,velocity_update_recovery_percent,,,,band-level metric,3.0,fast band,Stage 1,55.2747,
+band_recovery,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,MAE_inside_band_m_per_s,,,,band-level metric,3.0,fast band,Stage 1,301.7344,
+band_recovery,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,RMSE_inside_band_m_per_s,,,,band-level metric,3.0,fast band,Stage 1,305.19867,
+band_recovery,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,detection_efficiency_0_to_1,,,,band-level metric,3.0,fast band,Stage 1,0.791909,
+band_recovery,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,false_positive_ratio,,,,band-level metric,3.0,fast band,Stage 1,0.2627714,
+band_recovery,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,wrong_sign_ratio_inside_band,,,,band-level metric,3.0,fast band,Stage 1,0.0,
+band_recovery,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,velocity_update_recovery_percent,,,,band-level metric,3.0,fast band,Stage 2,72.59184,
+band_recovery,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,MAE_inside_band_m_per_s,,,,band-level metric,3.0,fast band,Stage 2,184.90607,
+band_recovery,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,RMSE_inside_band_m_per_s,,,,band-level metric,3.0,fast band,Stage 2,201.91484,
+band_recovery,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,detection_efficiency_0_to_1,,,,band-level metric,3.0,fast band,Stage 2,0.85091186,
+band_recovery,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,false_positive_ratio,,,,band-level metric,3.0,fast band,Stage 2,0.17520991,
+band_recovery,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,wrong_sign_ratio_inside_band,,,,band-level metric,3.0,fast band,Stage 2,0.0,
+background_non_band,6 ideal bands,resolution_limit,6,ideal_horizontal,MAE_background_m_per_s,,,,non-band background metric,,,Stage 1,90.2031520481591,yes
+background_non_band,6 ideal bands,resolution_limit,6,ideal_horizontal,RMSE_background_m_per_s,,,,non-band background metric,,,Stage 1,105.53850247470916,yes
+background_non_band,6 ideal bands,resolution_limit,6,ideal_horizontal,Bias_background_m_per_s,,,,non-band background metric,,,Stage 1,2.157088489482619,yes
+background_non_band,6 ideal bands,resolution_limit,6,ideal_horizontal,mean_absolute_velocity_update_background_m_per_s,,,,non-band background metric,,,Stage 1,90.2031520481591,yes
+background_non_band,6 ideal bands,resolution_limit,6,ideal_horizontal,median_absolute_velocity_update_background_m_per_s,,,,non-band background metric,,,Stage 1,87.31494,yes
+background_non_band,6 ideal bands,resolution_limit,6,ideal_horizontal,max_absolute_velocity_update_background_m_per_s,,,,non-band background metric,,,Stage 1,243.24316,yes
+background_non_band,6 ideal bands,resolution_limit,6,ideal_horizontal,fraction_background_pixels_abs_update_ge_100_m_per_s,,,,non-band background metric,,,Stage 1,0.4254679144385027,yes
+background_non_band,6 ideal bands,resolution_limit,6,ideal_horizontal,fraction_background_pixels_abs_update_ge_200_m_per_s,,,,non-band background metric,,,Stage 1,0.01838235294117647,yes
+background_non_band,6 ideal bands,resolution_limit,6,ideal_horizontal,MAE_background_m_per_s,,,,non-band background metric,,,Stage 2,79.5382388892445,yes
+background_non_band,6 ideal bands,resolution_limit,6,ideal_horizontal,RMSE_background_m_per_s,,,,non-band background metric,,,Stage 2,97.96866896767136,yes
+background_non_band,6 ideal bands,resolution_limit,6,ideal_horizontal,Bias_background_m_per_s,,,,non-band background metric,,,Stage 2,-1.9113667118430808,yes
+background_non_band,6 ideal bands,resolution_limit,6,ideal_horizontal,mean_absolute_velocity_update_background_m_per_s,,,,non-band background metric,,,Stage 2,79.5382388892445,yes
+background_non_band,6 ideal bands,resolution_limit,6,ideal_horizontal,median_absolute_velocity_update_background_m_per_s,,,,non-band background metric,,,Stage 2,70.899415,yes
+background_non_band,6 ideal bands,resolution_limit,6,ideal_horizontal,max_absolute_velocity_update_background_m_per_s,,,,non-band background metric,,,Stage 2,279.21094,yes
+background_non_band,6 ideal bands,resolution_limit,6,ideal_horizontal,fraction_background_pixels_abs_update_ge_100_m_per_s,,,,non-band background metric,,,Stage 2,0.365975935828877,yes
+background_non_band,6 ideal bands,resolution_limit,6,ideal_horizontal,fraction_background_pixels_abs_update_ge_200_m_per_s,,,,non-band background metric,,,Stage 2,0.020053475935828877,yes
+background_non_band,6 ideal bands,resolution_limit,6,ideal_horizontal,MAE_background_m_per_s,,,,non-band background metric,,,Stage 2 minus Stage 1,10.664913158914601,yes
+background_non_band,6 ideal bands,resolution_limit,6,ideal_horizontal,RMSE_background_m_per_s,,,,non-band background metric,,,Stage 2 minus Stage 1,7.569833507037799,yes
+background_non_band,6 ideal bands,resolution_limit,6,ideal_horizontal,Bias_background_m_per_s,,,,non-band background metric,,,Stage 2 minus Stage 1,0.2457217776395384,yes
+background_non_band,6 ideal bands,resolution_limit,6,ideal_horizontal,mean_absolute_velocity_update_background_m_per_s,,,,non-band background metric,,,Stage 2 minus Stage 1,10.664913158914601,yes
+background_non_band,6 ideal bands,resolution_limit,6,ideal_horizontal,median_absolute_velocity_update_background_m_per_s,,,,non-band background metric,,,Stage 2 minus Stage 1,16.415525000000002,yes
+background_non_band,6 ideal bands,resolution_limit,6,ideal_horizontal,max_absolute_velocity_update_background_m_per_s,,,,non-band background metric,,,Stage 2 minus Stage 1,-35.967780000000005,yes
+background_non_band,6 ideal bands,resolution_limit,6,ideal_horizontal,fraction_background_pixels_abs_update_ge_100_m_per_s,,,,non-band background metric,,,Stage 2 minus Stage 1,0.059491978609625684,yes
+background_non_band,6 ideal bands,resolution_limit,6,ideal_horizontal,fraction_background_pixels_abs_update_ge_200_m_per_s,,,,non-band background metric,,,Stage 2 minus Stage 1,-0.0016711229946524062,yes
+background_non_band,8 ideal bands,resolution_limit,8,ideal_horizontal,MAE_background_m_per_s,,,,non-band background metric,,,Stage 1,84.49346949857261,yes
+background_non_band,8 ideal bands,resolution_limit,8,ideal_horizontal,RMSE_background_m_per_s,,,,non-band background metric,,,Stage 1,99.79658023611252,yes
+background_non_band,8 ideal bands,resolution_limit,8,ideal_horizontal,Bias_background_m_per_s,,,,non-band background metric,,,Stage 1,-0.9938055043566928,yes
+background_non_band,8 ideal bands,resolution_limit,8,ideal_horizontal,mean_absolute_velocity_update_background_m_per_s,,,,non-band background metric,,,Stage 1,84.49346949857261,yes
+background_non_band,8 ideal bands,resolution_limit,8,ideal_horizontal,median_absolute_velocity_update_background_m_per_s,,,,non-band background metric,,,Stage 1,83.63476750000001,yes
+background_non_band,8 ideal bands,resolution_limit,8,ideal_horizontal,max_absolute_velocity_update_background_m_per_s,,,,non-band background metric,,,Stage 1,199.0664,yes
+background_non_band,8 ideal bands,resolution_limit,8,ideal_horizontal,fraction_background_pixels_abs_update_ge_100_m_per_s,,,,non-band background metric,,,Stage 1,0.35669191919191917,yes
+background_non_band,8 ideal bands,resolution_limit,8,ideal_horizontal,fraction_background_pixels_abs_update_ge_200_m_per_s,,,,non-band background metric,,,Stage 1,0.0,yes
+background_non_band,8 ideal bands,resolution_limit,8,ideal_horizontal,MAE_background_m_per_s,,,,non-band background metric,,,Stage 2,87.48139262590435,yes
+background_non_band,8 ideal bands,resolution_limit,8,ideal_horizontal,RMSE_background_m_per_s,,,,non-band background metric,,,Stage 2,104.8993739570952,yes
+background_non_band,8 ideal bands,resolution_limit,8,ideal_horizontal,Bias_background_m_per_s,,,,non-band background metric,,,Stage 2,-0.3724121672080205,yes
+background_non_band,8 ideal bands,resolution_limit,8,ideal_horizontal,mean_absolute_velocity_update_background_m_per_s,,,,non-band background metric,,,Stage 2,87.48139262590435,yes
+background_non_band,8 ideal bands,resolution_limit,8,ideal_horizontal,median_absolute_velocity_update_background_m_per_s,,,,non-band background metric,,,Stage 2,73.55664200000001,yes
+background_non_band,8 ideal bands,resolution_limit,8,ideal_horizontal,max_absolute_velocity_update_background_m_per_s,,,,non-band background metric,,,Stage 2,312.75342,yes
+background_non_band,8 ideal bands,resolution_limit,8,ideal_horizontal,fraction_background_pixels_abs_update_ge_100_m_per_s,,,,non-band background metric,,,Stage 2,0.35542929292929293,yes
+background_non_band,8 ideal bands,resolution_limit,8,ideal_horizontal,fraction_background_pixels_abs_update_ge_200_m_per_s,,,,non-band background metric,,,Stage 2,0.041351010101010104,yes
+background_non_band,8 ideal bands,resolution_limit,8,ideal_horizontal,MAE_background_m_per_s,,,,non-band background metric,,,Stage 2 minus Stage 1,-2.98792312733174,yes
+background_non_band,8 ideal bands,resolution_limit,8,ideal_horizontal,RMSE_background_m_per_s,,,,non-band background metric,,,Stage 2 minus Stage 1,-5.102793720982675,yes
+background_non_band,8 ideal bands,resolution_limit,8,ideal_horizontal,Bias_background_m_per_s,,,,non-band background metric,,,Stage 2 minus Stage 1,0.6213933371486723,yes
+background_non_band,8 ideal bands,resolution_limit,8,ideal_horizontal,mean_absolute_velocity_update_background_m_per_s,,,,non-band background metric,,,Stage 2 minus Stage 1,-2.98792312733174,yes
+background_non_band,8 ideal bands,resolution_limit,8,ideal_horizontal,median_absolute_velocity_update_background_m_per_s,,,,non-band background metric,,,Stage 2 minus Stage 1,10.078125499999999,yes
+background_non_band,8 ideal bands,resolution_limit,8,ideal_horizontal,max_absolute_velocity_update_background_m_per_s,,,,non-band background metric,,,Stage 2 minus Stage 1,-113.68702000000002,yes
+background_non_band,8 ideal bands,resolution_limit,8,ideal_horizontal,fraction_background_pixels_abs_update_ge_100_m_per_s,,,,non-band background metric,,,Stage 2 minus Stage 1,0.001262626262626243,yes
+background_non_band,8 ideal bands,resolution_limit,8,ideal_horizontal,fraction_background_pixels_abs_update_ge_200_m_per_s,,,,non-band background metric,,,Stage 2 minus Stage 1,-0.041351010101010104,yes
+background_non_band,10 ideal bands,resolution_limit,10,ideal_horizontal,MAE_background_m_per_s,,,,non-band background metric,,,Stage 1,53.8809519558505,yes
+background_non_band,10 ideal bands,resolution_limit,10,ideal_horizontal,RMSE_background_m_per_s,,,,non-band background metric,,,Stage 1,77.83099526652349,yes
+background_non_band,10 ideal bands,resolution_limit,10,ideal_horizontal,Bias_background_m_per_s,,,,non-band background metric,,,Stage 1,-24.359228295312143,yes
+background_non_band,10 ideal bands,resolution_limit,10,ideal_horizontal,mean_absolute_velocity_update_background_m_per_s,,,,non-band background metric,,,Stage 1,53.8809519558505,yes
+background_non_band,10 ideal bands,resolution_limit,10,ideal_horizontal,median_absolute_velocity_update_background_m_per_s,,,,non-band background metric,,,Stage 1,40.492676,yes
+background_non_band,10 ideal bands,resolution_limit,10,ideal_horizontal,max_absolute_velocity_update_background_m_per_s,,,,non-band background metric,,,Stage 1,243.21924,yes
+background_non_band,10 ideal bands,resolution_limit,10,ideal_horizontal,fraction_background_pixels_abs_update_ge_100_m_per_s,,,,non-band background metric,,,Stage 1,0.12535511363636365,yes
+background_non_band,10 ideal bands,resolution_limit,10,ideal_horizontal,fraction_background_pixels_abs_update_ge_200_m_per_s,,,,non-band background metric,,,Stage 1,0.060369318181818184,yes
+background_non_band,10 ideal bands,resolution_limit,10,ideal_horizontal,MAE_background_m_per_s,,,,non-band background metric,,,Stage 2,126.0523080171955,yes
+background_non_band,10 ideal bands,resolution_limit,10,ideal_horizontal,RMSE_background_m_per_s,,,,non-band background metric,,,Stage 2,145.38892167037588,yes
+background_non_band,10 ideal bands,resolution_limit,10,ideal_horizontal,Bias_background_m_per_s,,,,non-band background metric,,,Stage 2,-0.09710287289506296,yes
+background_non_band,10 ideal bands,resolution_limit,10,ideal_horizontal,mean_absolute_velocity_update_background_m_per_s,,,,non-band background metric,,,Stage 2,126.0523080171955,yes
+background_non_band,10 ideal bands,resolution_limit,10,ideal_horizontal,median_absolute_velocity_update_background_m_per_s,,,,non-band background metric,,,Stage 2,128.86669999999998,yes
+background_non_band,10 ideal bands,resolution_limit,10,ideal_horizontal,max_absolute_velocity_update_background_m_per_s,,,,non-band background metric,,,Stage 2,412.94434,yes
+background_non_band,10 ideal bands,resolution_limit,10,ideal_horizontal,fraction_background_pixels_abs_update_ge_100_m_per_s,,,,non-band background metric,,,Stage 2,0.6207386363636364,yes
+background_non_band,10 ideal bands,resolution_limit,10,ideal_horizontal,fraction_background_pixels_abs_update_ge_200_m_per_s,,,,non-band background metric,,,Stage 2,0.18892045454545456,yes
+background_non_band,10 ideal bands,resolution_limit,10,ideal_horizontal,MAE_background_m_per_s,,,,non-band background metric,,,Stage 2 minus Stage 1,-72.171356061345,yes
+background_non_band,10 ideal bands,resolution_limit,10,ideal_horizontal,RMSE_background_m_per_s,,,,non-band background metric,,,Stage 2 minus Stage 1,-67.55792640385239,yes
+background_non_band,10 ideal bands,resolution_limit,10,ideal_horizontal,Bias_background_m_per_s,,,,non-band background metric,,,Stage 2 minus Stage 1,24.26212542241708,yes
+background_non_band,10 ideal bands,resolution_limit,10,ideal_horizontal,mean_absolute_velocity_update_background_m_per_s,,,,non-band background metric,,,Stage 2 minus Stage 1,-72.171356061345,yes
+background_non_band,10 ideal bands,resolution_limit,10,ideal_horizontal,median_absolute_velocity_update_background_m_per_s,,,,non-band background metric,,,Stage 2 minus Stage 1,-88.37402399999998,yes
+background_non_band,10 ideal bands,resolution_limit,10,ideal_horizontal,max_absolute_velocity_update_background_m_per_s,,,,non-band background metric,,,Stage 2 minus Stage 1,-169.7251,yes
+background_non_band,10 ideal bands,resolution_limit,10,ideal_horizontal,fraction_background_pixels_abs_update_ge_100_m_per_s,,,,non-band background metric,,,Stage 2 minus Stage 1,-0.4953835227272727,yes
+background_non_band,10 ideal bands,resolution_limit,10,ideal_horizontal,fraction_background_pixels_abs_update_ge_200_m_per_s,,,,non-band background metric,,,Stage 2 minus Stage 1,-0.12855113636363638,yes
+background_non_band,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,MAE_background_m_per_s,,,,non-band background metric,,,Stage 1,122.77796,no
+background_non_band,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,RMSE_background_m_per_s,,,,non-band background metric,,,Stage 1,150.79657,no
+background_non_band,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,Bias_background_m_per_s,,,,non-band background metric,,,Stage 1,48.987766,no
+background_non_band,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,mean_absolute_velocity_update_background_m_per_s,,,,non-band background metric,,,Stage 1,122.77796,no
+background_non_band,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,median_absolute_velocity_update_background_m_per_s,,,,non-band background metric,,,Stage 1,104.24463,no
+background_non_band,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,max_absolute_velocity_update_background_m_per_s,,,,non-band background metric,,,Stage 1,416.67285,no
+background_non_band,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,fraction_background_pixels_abs_update_ge_100_m_per_s,,,,non-band background metric,,,Stage 1,0.5197897340754484,no
+background_non_band,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,fraction_background_pixels_abs_update_ge_200_m_per_s,,,,non-band background metric,,,Stage 1,0.1907854050711193,no
+background_non_band,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,MAE_background_m_per_s,,,,non-band background metric,,,Stage 2,79.83117,no
+background_non_band,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,RMSE_background_m_per_s,,,,non-band background metric,,,Stage 2,102.49177,no
+background_non_band,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,Bias_background_m_per_s,,,,non-band background metric,,,Stage 2,28.785988,no
+background_non_band,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,mean_absolute_velocity_update_background_m_per_s,,,,non-band background metric,,,Stage 2,79.83117,no
+background_non_band,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,median_absolute_velocity_update_background_m_per_s,,,,non-band background metric,,,Stage 2,65.99756,no
+background_non_band,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,max_absolute_velocity_update_background_m_per_s,,,,non-band background metric,,,Stage 2,485.12305,no
+background_non_band,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,fraction_background_pixels_abs_update_ge_100_m_per_s,,,,non-band background metric,,,Stage 2,0.2906617192331478,no
+background_non_band,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,fraction_background_pixels_abs_update_ge_200_m_per_s,,,,non-band background metric,,,Stage 2,0.0538033395176252,no
+background_non_band,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,MAE_background_m_per_s,,,,non-band background metric,,,Stage 2 minus Stage 1,42.946793,no
+background_non_band,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,RMSE_background_m_per_s,,,,non-band background metric,,,Stage 2 minus Stage 1,48.304802,no
+background_non_band,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,Bias_background_m_per_s,,,,non-band background metric,,,Stage 2 minus Stage 1,20.201778,no
+background_non_band,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,mean_absolute_velocity_update_background_m_per_s,,,,non-band background metric,,,Stage 2 minus Stage 1,42.946793,no
+background_non_band,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,median_absolute_velocity_update_background_m_per_s,,,,non-band background metric,,,Stage 2 minus Stage 1,38.24707,no
+background_non_band,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,max_absolute_velocity_update_background_m_per_s,,,,non-band background metric,,,Stage 2 minus Stage 1,-68.450195,no
+background_non_band,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,fraction_background_pixels_abs_update_ge_100_m_per_s,,,,non-band background metric,,,Stage 2 minus Stage 1,0.2291280148423005,no
+background_non_band,3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,fraction_background_pixels_abs_update_ge_200_m_per_s,,,,non-band background metric,,,Stage 2 minus Stage 1,0.1369820655534941,no

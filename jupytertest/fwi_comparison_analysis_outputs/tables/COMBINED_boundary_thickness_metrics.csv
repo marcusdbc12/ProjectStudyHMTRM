@@ -1,0 +1,55 @@
+experiment_name,experiment_type,num_bands,geometry,tectonic_band_number,band_type,FWI stage,center_shift_micrometers,thickness_change_micrometers,detected_thickness_micrometers,true_thickness_micrometers
+6 ideal bands,resolution_limit,6,ideal_horizontal,1,fast band,Stage 1,2.499999999999993,15.000000000000002,30.000000000000004,15.000000000000002
+6 ideal bands,resolution_limit,6,ideal_horizontal,1,fast band,Stage 2,2.499999999999993,4.999999999999998,20.0,15.000000000000002
+6 ideal bands,resolution_limit,6,ideal_horizontal,2,slow band,Stage 1,2.5,4.999999999999998,20.0,15.000000000000002
+6 ideal bands,resolution_limit,6,ideal_horizontal,2,slow band,Stage 2,2.5,15.000000000000002,30.000000000000004,15.000000000000002
+6 ideal bands,resolution_limit,6,ideal_horizontal,3,fast band,Stage 1,-2.499999999999986,15.000000000000002,30.000000000000004,15.000000000000002
+6 ideal bands,resolution_limit,6,ideal_horizontal,3,fast band,Stage 2,0.0,9.999999999999998,25.0,15.000000000000002
+6 ideal bands,resolution_limit,6,ideal_horizontal,4,slow band,Stage 1,0.0,9.999999999999998,25.0,15.000000000000002
+6 ideal bands,resolution_limit,6,ideal_horizontal,4,slow band,Stage 2,0.0,9.999999999999998,25.0,15.000000000000002
+6 ideal bands,resolution_limit,6,ideal_horizontal,5,fast band,Stage 1,-2.5,15.000000000000002,30.000000000000004,15.000000000000002
+6 ideal bands,resolution_limit,6,ideal_horizontal,5,fast band,Stage 2,0.0,9.999999999999998,25.0,15.000000000000002
+6 ideal bands,resolution_limit,6,ideal_horizontal,6,slow band,Stage 1,0.0,20.000000000000007,35.00000000000001,15.000000000000002
+6 ideal bands,resolution_limit,6,ideal_horizontal,6,slow band,Stage 2,0.0,9.999999999999998,25.0,15.000000000000002
+8 ideal bands,resolution_limit,8,ideal_horizontal,1,fast band,Stage 1,22.5,55.000000000000014,65.00000000000001,10.0
+8 ideal bands,resolution_limit,8,ideal_horizontal,1,fast band,Stage 2,22.5,55.000000000000014,65.00000000000001,10.0
+8 ideal bands,resolution_limit,8,ideal_horizontal,2,slow band,Stage 1,22.5,55.000000000000014,65.00000000000001,10.0
+8 ideal bands,resolution_limit,8,ideal_horizontal,2,slow band,Stage 2,22.5,55.000000000000014,65.00000000000001,10.0
+8 ideal bands,resolution_limit,8,ideal_horizontal,3,fast band,Stage 1,22.499999999999982,55.000000000000014,65.00000000000001,10.0
+8 ideal bands,resolution_limit,8,ideal_horizontal,3,fast band,Stage 2,0.0,100.0,110.0,10.0
+8 ideal bands,resolution_limit,8,ideal_horizontal,4,slow band,Stage 1,22.500000000000018,55.000000000000014,65.00000000000001,10.0
+8 ideal bands,resolution_limit,8,ideal_horizontal,4,slow band,Stage 2,22.500000000000018,55.000000000000014,65.00000000000001,10.0
+8 ideal bands,resolution_limit,8,ideal_horizontal,5,fast band,Stage 1,0.0,100.0,110.0,10.0
+8 ideal bands,resolution_limit,8,ideal_horizontal,5,fast band,Stage 2,22.5,55.000000000000014,65.00000000000001,10.0
+8 ideal bands,resolution_limit,8,ideal_horizontal,6,slow band,Stage 1,22.5,55.000000000000014,65.00000000000001,10.0
+8 ideal bands,resolution_limit,8,ideal_horizontal,6,slow band,Stage 2,0.0,100.0,110.0,10.0
+8 ideal bands,resolution_limit,8,ideal_horizontal,7,fast band,Stage 1,0.0,10.0,20.0,10.0
+8 ideal bands,resolution_limit,8,ideal_horizontal,7,fast band,Stage 2,-22.5,55.000000000000014,65.00000000000001,10.0
+8 ideal bands,resolution_limit,8,ideal_horizontal,8,slow band,Stage 1,-20.0,60.000000000000014,70.00000000000001,10.0
+8 ideal bands,resolution_limit,8,ideal_horizontal,8,slow band,Stage 2,-22.5,55.000000000000014,65.00000000000001,10.0
+10 ideal bands,resolution_limit,10,ideal_horizontal,1,fast band,Stage 1,35.0,10.0,20.0,10.0
+10 ideal bands,resolution_limit,10,ideal_horizontal,1,fast band,Stage 2,27.5,45.0,55.0,10.0
+10 ideal bands,resolution_limit,10,ideal_horizontal,2,slow band,Stage 1,10.0,70.0,80.0,10.0
+10 ideal bands,resolution_limit,10,ideal_horizontal,2,slow band,Stage 2,22.5,55.000000000000014,65.00000000000001,10.0
+10 ideal bands,resolution_limit,10,ideal_horizontal,3,fast band,Stage 1,12.5,65.0,75.0,10.0
+10 ideal bands,resolution_limit,10,ideal_horizontal,3,fast band,Stage 2,2.5,95.0,105.0,10.0
+10 ideal bands,resolution_limit,10,ideal_horizontal,4,slow band,Stage 1,17.5,65.0,75.0,10.0
+10 ideal bands,resolution_limit,10,ideal_horizontal,4,slow band,Stage 2,0.0,100.0,110.0,10.0
+10 ideal bands,resolution_limit,10,ideal_horizontal,5,fast band,Stage 1,17.499999999999986,65.0,75.0,10.0
+10 ideal bands,resolution_limit,10,ideal_horizontal,5,fast band,Stage 2,0.0,100.0,110.0,10.0
+10 ideal bands,resolution_limit,10,ideal_horizontal,6,slow band,Stage 1,20.0,60.000000000000014,70.00000000000001,10.0
+10 ideal bands,resolution_limit,10,ideal_horizontal,6,slow band,Stage 2,0.0,100.0,110.0,10.0
+10 ideal bands,resolution_limit,10,ideal_horizontal,7,fast band,Stage 1,0.0,100.0,110.0,10.0
+10 ideal bands,resolution_limit,10,ideal_horizontal,7,fast band,Stage 2,0.0,100.0,110.0,10.0
+10 ideal bands,resolution_limit,10,ideal_horizontal,8,slow band,Stage 1,0.0,100.0,110.0,10.0
+10 ideal bands,resolution_limit,10,ideal_horizontal,8,slow band,Stage 2,0.0,100.0,110.0,10.0
+10 ideal bands,resolution_limit,10,ideal_horizontal,9,fast band,Stage 1,-22.5,55.000000000000014,65.00000000000001,10.0
+10 ideal bands,resolution_limit,10,ideal_horizontal,9,fast band,Stage 2,-22.5,55.000000000000014,65.00000000000001,10.0
+10 ideal bands,resolution_limit,10,ideal_horizontal,10,slow band,Stage 1,15.0,10.0,20.0,10.0
+10 ideal bands,resolution_limit,10,ideal_horizontal,10,slow band,Stage 2,-22.5,55.000000000000014,65.00000000000001,10.0
+3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,1,fast band,Stage 1,7.499999999999993,25.0,50.0,25.0
+3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,1,fast band,Stage 2,7.499999999999993,25.0,50.0,25.0
+3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,2,slow band,Stage 1,-10.0,20.0,40.0,20.0
+3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,2,slow band,Stage 2,0.0,20.0,40.0,20.0
+3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,3,fast band,Stage 1,2.5,14.999999999999996,45.0,30.000000000000004
+3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,3,fast band,Stage 2,0.0,9.999999999999996,40.0,30.000000000000004

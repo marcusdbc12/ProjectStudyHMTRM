@@ -1,0 +1,55 @@
+experiment_name,experiment_type,num_bands,geometry,tectonic_band_number,band_type,FWI stage,velocity_update_recovery_percent,MAE_inside_band_m_per_s,RMSE_inside_band_m_per_s,detection_efficiency_0_to_1,false_positive_ratio,wrong_sign_ratio_inside_band
+6 ideal bands,resolution_limit,6,ideal_horizontal,1,fast band,Stage 1,63.85022,60.97037,63.981133,0.6579438,0.5198866,0.0
+6 ideal bands,resolution_limit,6,ideal_horizontal,1,fast band,Stage 2,86.070694,28.063736,32.83704,0.74379385,0.34445864,0.0
+6 ideal bands,resolution_limit,6,ideal_horizontal,2,slow band,Stage 1,83.33011,29.851477,37.91581,0.72434735,0.38055313,0.0
+6 ideal bands,resolution_limit,6,ideal_horizontal,2,slow band,Stage 2,67.58626,55.384033,60.70991,0.67317915,0.48548862,0.0
+6 ideal bands,resolution_limit,6,ideal_horizontal,3,fast band,Stage 1,66.84443,83.880516,86.40704,0.7640414,0.30882952,0.0
+6 ideal bands,resolution_limit,6,ideal_horizontal,3,fast band,Stage 2,65.08759,88.62445,92.316734,0.7713543,0.29642105,0.0
+6 ideal bands,resolution_limit,6,ideal_horizontal,4,slow band,Stage 1,69.728546,76.583984,80.469986,0.77474695,0.290744,0.0
+6 ideal bands,resolution_limit,6,ideal_horizontal,4,slow band,Stage 2,73.90225,66.75826,70.067535,0.78610086,0.27210134,0.0
+6 ideal bands,resolution_limit,6,ideal_horizontal,5,fast band,Stage 1,65.801445,115.35887,116.66331,0.81919193,0.2207152,0.0
+6 ideal bands,resolution_limit,6,ideal_horizontal,5,fast band,Stage 2,62.901943,125.16718,127.90452,0.82214534,0.21632996,0.0
+6 ideal bands,resolution_limit,6,ideal_horizontal,6,slow band,Stage 1,58.771812,139.07074,139.46709,0.7987446,0.25196457,0.0
+6 ideal bands,resolution_limit,6,ideal_horizontal,6,slow band,Stage 2,75.71305,82.66583,85.28459,0.845458,0.18279086,0.0
+8 ideal bands,resolution_limit,8,ideal_horizontal,1,fast band,Stage 1,65.10591,58.852516,63.34151,0.6845619,0.4607883,0.0
+8 ideal bands,resolution_limit,8,ideal_horizontal,1,fast band,Stage 2,55.649315,74.802025,77.00123,0.62731516,0.5940951,0.0
+8 ideal bands,resolution_limit,8,ideal_horizontal,2,slow band,Stage 1,53.315945,78.73748,79.70376,0.6332531,0.57914746,0.0
+8 ideal bands,resolution_limit,8,ideal_horizontal,2,slow band,Stage 2,73.522194,45.233448,46.65805,0.6773169,0.4764138,0.0
+8 ideal bands,resolution_limit,8,ideal_horizontal,3,fast band,Stage 1,57.646973,107.14916,110.25469,0.74791133,0.33705685,0.0
+8 ideal bands,resolution_limit,8,ideal_horizontal,3,fast band,Stage 2,58.087402,106.03491,107.37047,0.7326078,0.36498687,0.0
+8 ideal bands,resolution_limit,8,ideal_horizontal,4,slow band,Stage 1,59.475464,102.52326,104.45266,0.75186986,0.3300174,0.0
+8 ideal bands,resolution_limit,8,ideal_horizontal,4,slow band,Stage 2,71.341446,74.134186,76.464424,0.76057214,0.3147996,0.0
+8 ideal bands,resolution_limit,8,ideal_horizontal,5,fast band,Stage 1,48.592617,173.4077,175.4553,0.7719111,0.29548597,0.0
+8 ideal bands,resolution_limit,8,ideal_horizontal,5,fast band,Stage 2,58.38975,140.35997,141.29196,0.79228795,0.26216733,0.0
+8 ideal bands,resolution_limit,8,ideal_horizontal,6,slow band,Stage 1,56.46335,146.85765,148.32893,0.7985197,0.25231734,0.0
+8 ideal bands,resolution_limit,8,ideal_horizontal,6,slow band,Stage 2,70.49096,100.27122,103.54384,0.8134643,0.22931027,0.0
+8 ideal bands,resolution_limit,8,ideal_horizontal,7,fast band,Stage 1,48.310482,217.94923,220.88675,0.8130371,0.22995615,0.0
+8 ideal bands,resolution_limit,8,ideal_horizontal,7,fast band,Stage 2,63.11391,155.90428,156.8289,0.8448517,0.1836398,0.0
+8 ideal bands,resolution_limit,8,ideal_horizontal,8,slow band,Stage 1,45.4518,230.00238,230.69057,0.79967415,0.25050932,0.0
+8 ideal bands,resolution_limit,8,ideal_horizontal,8,slow band,Stage 2,63.550777,153.68805,155.76149,0.83404464,0.19897662,0.0
+10 ideal bands,resolution_limit,10,ideal_horizontal,1,fast band,Stage 1,-18.234978,199.41528,199.86256,0.0,,
+10 ideal bands,resolution_limit,10,ideal_horizontal,1,fast band,Stage 2,56.21866,73.84177,81.69858,0.5492455,0.8206795454025269,0.0
+10 ideal bands,resolution_limit,10,ideal_horizontal,2,slow band,Stage 1,-17.765718,198.62383,198.92552,0.0026539436,375.7977600097656,320.30999755859375
+10 ideal bands,resolution_limit,10,ideal_horizontal,2,slow band,Stage 2,78.7949,43.170742,53.261322,0.6334374,0.5786879658699036,0.0
+10 ideal bands,resolution_limit,10,ideal_horizontal,3,fast band,Stage 1,-0.07939928,253.1911,253.68112,0.31013095,2.2244443893432617,1.0278315544128418
+10 ideal bands,resolution_limit,10,ideal_horizontal,3,fast band,Stage 2,63.491196,92.36385,95.338646,0.68116987,0.468062549829483,0.0
+10 ideal bands,resolution_limit,10,ideal_horizontal,4,slow band,Stage 1,6.3716664,236.87056,237.61671,0.33918735,1.948223114013672,0.0912619084119796
+10 ideal bands,resolution_limit,10,ideal_horizontal,4,slow band,Stage 2,56.41489,110.266205,114.75114,0.65100664,0.5360826253890991,0.0
+10 ideal bands,resolution_limit,10,ideal_horizontal,5,fast band,Stage 1,8.439522,308.8521,309.40585,0.6573764,0.5211985111236572,0.0224627796560525
+10 ideal bands,resolution_limit,10,ideal_horizontal,5,fast band,Stage 2,63.58365,122.839935,123.5526,0.7459943,0.3404928147792816,0.0
+10 ideal bands,resolution_limit,10,ideal_horizontal,6,slow band,Stage 1,13.242198,292.65125,292.9542,0.571575,0.7495517730712891,0.0
+10 ideal bands,resolution_limit,10,ideal_horizontal,6,slow band,Stage 2,60.294464,133.93452,135.61461,0.73299736,0.3642614185810089,0.0
+10 ideal bands,resolution_limit,10,ideal_horizontal,7,fast band,Stage 1,10.65641,376.7176,377.1741,0.7591716,0.3172251880168915,0.0178857706487178
+10 ideal bands,resolution_limit,10,ideal_horizontal,7,fast band,Stage 2,60.752167,165.4889,165.81616,0.7821169,0.2785812318325043,0.0
+10 ideal bands,resolution_limit,10,ideal_horizontal,8,slow band,Stage 1,16.190765,353.38153,353.7355,0.67722666,0.4766105413436889,0.0
+10 ideal bands,resolution_limit,10,ideal_horizontal,8,slow band,Stage 2,60.34855,167.19026,168.05035,0.77935076,0.2831193208694458,0.0
+10 ideal bands,resolution_limit,10,ideal_horizontal,9,fast band,Stage 1,11.561082,447.4837,447.78384,0.80730754,0.2386852800846099,0.0025234667118638
+10 ideal bands,resolution_limit,10,ideal_horizontal,9,fast band,Stage 2,60.57111,199.50275,199.96309,0.8154759,0.2262779027223587,0.0
+10 ideal bands,resolution_limit,10,ideal_horizontal,10,slow band,Stage 1,16.842422,420.7607,421.4153,0.72788054,0.3738517761230469,0.0
+10 ideal bands,resolution_limit,10,ideal_horizontal,10,slow band,Stage 2,61.8327,193.1189,193.58961,0.8177932,0.2228030115365982,0.0
+3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,1,fast band,Stage 1,63.917698,152.14143,156.87761,0.7016456,0.42522097,0.0
+3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,1,fast band,Stage 2,92.424736,47.178688,70.87901,0.7882648,0.2686092,0.0
+3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,2,slow band,Stage 1,45.06739,138.97423,155.85976,0.8018427,0.24712737,0.008192738
+3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,2,slow band,Stage 2,78.34493,70.626045,91.66674,0.9099081,0.099012114,0.0014102594
+3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,3,fast band,Stage 1,55.2747,301.7344,305.19867,0.791909,0.2627714,0.0
+3 irregular tectonic bands,realistic_tectonic,3,irregular_tectonic,3,fast band,Stage 2,72.59184,184.90607,201.91484,0.85091186,0.17520991,0.0

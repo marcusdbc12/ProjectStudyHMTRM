@@ -1,0 +1,10 @@
+contrast_percent_relative_to_silicon,void_speed_m_per_s,speed_difference_from_silicon_m_per_s,void_recovery_percent,void_MAE_m_per_s,background_MAE_m_per_s,IoU,F1_score,wrong_sign_ratio_inside_void,false_positive_ratio,overall_quality_pass,quality_class,scientific_conclusion
+10.0,7589.7,843.3,81.602455,155.14679,41.61597,0.9138755980861244,0.955,0.0,0.03531374,True,pass,acceptable_reconstruction
+20.0,6746.4,1686.6,92.35725,128.90276,89.47202,0.916279069767442,0.9563106796116504,0.0,0.030505192,True,pass,acceptable_reconstruction
+30.0,5903.1,2529.9,87.97521,304.21503,174.86073,0.8794642857142857,0.9358669833729216,0.0,0.043220285,True,pass,acceptable_reconstruction
+40.0,5059.8,3373.2,88.18341,398.59683,291.86285,0.8376068376068376,0.911627906976744,0.0,0.053106584,True,pass,acceptable_reconstruction
+50.0,4216.5,4216.5,81.03797,799.53436,710.0926,0.5302593659942363,0.6930320150659135,0.0007020175,0.10585336,True,pass,acceptable_reconstruction
+60.0,3373.2,5059.8,50.20341,2519.608,1451.9423,0.1906474820143885,0.3202416918429003,0.025809662,0.23331141,False,amplitude_recovery_failure,beyond_supported_limit
+70.0,2529.9,5903.1,-10.16042,6502.8794,1344.0566,0.0126582278481012,0.025,1.7429155,0.5949251,False,wrong_direction_amplitude_failure,beyond_supported_limit
+80.0,1686.6,6746.4,-4.0139365,7017.1963,1505.6887,0.0039370078740157,0.0078431372549019,1.2786336,0.44166508,False,wrong_direction_amplitude_failure,beyond_supported_limit
+90.0,843.3,7589.7,-36.653168,10371.566,1710.3136,0.0616740088105726,0.1161825726141079,5.63163,0.7070094,False,wrong_direction_amplitude_failure,beyond_supported_limit

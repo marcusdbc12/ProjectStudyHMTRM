@@ -1,0 +1,10 @@
+benchmark_folder,folder_contrast_percent_relative_to_silicon,folder_true_void_speed_m_per_s,reconstructed_mean_void_speed_m_per_s,reconstructed_void_speed_error_m_per_s,reconstructed_void_above_silicon,void_velocity_update_recovery_percent,wrong_sign_ratio_inside_void,quality_class,overall_quality_pass
+fwi_void_20to85_v90_c10_u843,10.0,7589.7,7744.8467,155.14670000000024,False,81.602455,0.0,pass,True
+fwi_void_20to85_v80_c20_u1687,20.0,6746.4,6875.3027,128.90270000000055,False,92.35725,0.0,pass,True
+fwi_void_20to85_v70_c30_u2530,30.0,5903.1,6207.315,304.21499999999924,False,87.97521,0.0,pass,True
+fwi_void_20to85_v60_c40_u3373,40.0,5059.8,5458.397,398.59699999999975,False,88.18341,0.0,pass,True
+fwi_void_20to85_v50_c50_u4216,50.0,4216.5,5016.034,799.5339999999997,False,81.03797,0.0007020175,pass,True
+fwi_void_20to85_v40_c60_u5060,60.0,3373.2,5892.8076,2519.6076000000003,False,50.20341,0.025809662,amplitude_recovery_failure,False
+fwi_void_20to85_v30_c70_u5903,70.0,2529.9,9032.779,6502.879000000001,True,-10.16042,1.7429155,wrong_direction_amplitude_failure,False
+fwi_void_20to85_v20_c80_u6746,80.0,1686.6,8703.796,7017.196,True,-4.0139365,1.2786336,wrong_direction_amplitude_failure,False
+fwi_void_20to85_v10_c90_u7590,90.0,843.3,11214.865,10371.565,True,-36.653168,5.63163,wrong_direction_amplitude_failure,False

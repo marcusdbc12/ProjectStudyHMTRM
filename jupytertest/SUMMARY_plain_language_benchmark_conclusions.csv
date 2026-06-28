@@ -1,0 +1,9 @@
+max_velocity_update_m_per_s,max_update_percent_of_silicon,range_comment,void_recovery_percent,detection_efficiency,false_positive_ratio,background_MAE_m_per_s,IoU,detection_comment,artifact_comment
+700.0,8.300723348748962,Range-limited,13.50165,0.73260564,0.36499083,364.53928,0.0,Fails basic detection criteria,Low/moderate background artifacts
+1500.0,17.787264318747777,Range-limited,-11.39901,0.497317,1.0107901,525.4244,0.0,Fails basic detection criteria,Moderate background artifacts
+3000.0,35.574528637495554,Range-limited,-19.79548,0.45060343,1.2192464,765.5577,0.0,Fails basic detection criteria,Moderate background artifacts
+4216.0,49.99407091189375,Range-limited,-24.39202,0.4235432,1.3610342,873.905,0.0041493775933609,Fails basic detection criteria,Moderate background artifacts
+5000.0,59.29088106249259,Range sufficient,-25.875204,0.42792282,1.33687,926.38855,0.004,Fails basic detection criteria,Moderate background artifacts
+7000.0,83.00723348748963,Range sufficient,-28.459024,0.38677767,1.5854646,975.9138,0.0078125,Fails basic detection criteria,Moderate background artifacts
+7500.0,88.93632159373888,Range sufficient,-29.194294,0.37968007,1.6337965,1023.05273,0.0115384615384615,Fails basic detection criteria,Strong background artifacts
+8000.0,94.86540969998815,Range sufficient,-28.673668,0.35907182,1.7849582,1054.0647,0.0114503816793893,Fails basic detection criteria,Strong background artifacts

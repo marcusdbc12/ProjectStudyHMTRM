@@ -1,0 +1,19 @@
+Category,Conclusion,Evidence
+Global MAE,Stage 2 improved the average absolute velocity error.,MAE changed from 95.06 m/s to 64.20 m/s.
+Global RMSE,Stage 2 improved the RMSE.,RMSE changed from 124.80 m/s to 94.42 m/s.
+Global correlation,Stage 2 improved the spatial similarity with the true map.,Correlation changed from 0.708 to 0.834.
+Band 1 speed,Stage 2 did not improve the speed estimate.,fast band: absolute speed error changed from 386.50 m/s to 453.98 m/s.
+Band 1 position,Stage 2 did not improve the band position estimate.,fast band: absolute position error changed from 2.31 µm to 16.21 µm.
+Band 1 localization,Stage 2 did not improve localization of the band.,fast band: detection efficiency changed from 0.639 to 0.320.
+Band 1 false positives,Stage 2 did not reduce background artifacts.,fast band: false positive ratio changed from 0.565 to 2.122.
+Band 1 wrong-sign artifacts,Stage 2 did not reduce wrong-sign artifacts inside the band.,fast band: wrong-sign ratio changed from 0.383 to 3.995.
+Band 2 speed,Stage 2 did not improve the speed estimate.,slow band: absolute speed error changed from 116.02 m/s to 162.73 m/s.
+Band 2 position,Stage 2 improved the band position estimate.,slow band: absolute position error changed from 9.77 µm to 9.37 µm.
+Band 2 localization,Stage 2 did not improve localization of the band.,slow band: detection efficiency changed from 0.715 to 0.700.
+Band 2 false positives,Stage 2 did not reduce background artifacts.,slow band: false positive ratio changed from 0.399 to 0.429.
+Band 2 wrong-sign artifacts,Stage 2 did not reduce wrong-sign artifacts inside the band.,slow band: wrong-sign ratio changed from 0.135 to 0.267.
+Band 3 speed,Stage 2 did not improve the speed estimate.,fast band: absolute speed error changed from 675.82 m/s to 704.78 m/s.
+Band 3 position,Stage 2 did not improve the band position estimate.,fast band: absolute position error changed from 2.74 µm to 5.69 µm.
+Band 3 localization,Stage 2 did not improve localization of the band.,fast band: detection efficiency changed from 0.525 to 0.326.
+Band 3 false positives,Stage 2 did not reduce background artifacts.,fast band: false positive ratio changed from 0.906 to 2.064.
+Band 3 wrong-sign artifacts,Stage 2 did not reduce wrong-sign artifacts inside the band.,fast band: wrong-sign ratio changed from 1.031 to 3.691.

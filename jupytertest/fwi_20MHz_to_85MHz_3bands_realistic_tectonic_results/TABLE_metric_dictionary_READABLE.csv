@@ -1,0 +1,11 @@
+Metric name,Full name,Formula,Unit,Meaning,Good result
+MAE,Mean Absolute Error,mean(abs(reconstructed_speed - true_speed)),m/s,Average absolute velocity error.,Lower is better.
+RMSE,Root Mean Squared Error,sqrt(mean((reconstructed_speed - true_speed)^2)),m/s,Typical velocity error with stronger penalty for large errors.,Lower is better.
+Bias,Mean Signed Error,mean(reconstructed_speed - true_speed),m/s,Positive means too fast on average; negative means too slow.,Closer to zero is better.
+NRMSE,Normalized Root Mean Squared Error,100 * RMSE / (max(true_speed) - min(true_speed)),%,RMSE expressed as a percentage of the true velocity range.,Lower is better.
+Correlation,Pearson Spatial Correlation,"corrcoef(reconstructed_speed_flat, true_speed_flat)",unitless,Spatial similarity between reconstructed and true maps.,Closer to 1 is better.
+Velocity update recovery percent,Recovered update relative to true update,100 * reconstructed_mean_update / true_velocity_update,%,How much of the true band contrast was recovered.,Close to 100% is ideal.
+Position error,Band center position error,detected_center - true_center,cells or micrometers,Positive means detected band is deeper; negative means shallower.,Closer to zero is better.
+Detection efficiency,Band localization efficiency,band_energy / (band_energy + background_energy),0 to 1,Fraction of expected-sign reconstruction energy concentrated inside the true band.,Closer to 1 is better.
+False positive ratio,Background artifact ratio,background_energy / band_energy,unitless,Expected-sign artifact energy outside the band compared with energy inside the band.,Closer to 0 is better.
+Wrong-sign ratio inside band,Wrong-sign artifact inside the band,wrong_sign_energy_inside_band / expected_sign_energy_inside_band,unitless,Measures whether the reconstruction gives the wrong sign inside a known fast or slow band.,Closer to 0 is better.

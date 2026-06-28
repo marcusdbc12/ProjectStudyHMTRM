@@ -1,0 +1,5 @@
+Category,Conclusion,Evidence
+Global reconstruction,Stage 2 did not improve the global MAE.,Global MAE changed from 1102.28 m/s to 1110.44 m/s.
+Void amplitude recovery,Stage 2 did not improve the recovered void amplitude.,Void recovery changed from -6.57% to -10.82%.
+Void localization,Stage 2 improved void localization.,Detection efficiency changed from 0.837 to 0.841.
+Stage 2 detection decision,Stage 2 did not pass the circular void detection criteria.,"Recovery OK: False, localization OK: True, false positive OK: True, background OK: True."
